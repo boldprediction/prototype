@@ -1,0 +1,99 @@
+{
+    "type": "object",
+    "properties": {
+        "authors": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "DOI": {
+            "type": "url"
+        },
+        "title": {
+            "type": "string"
+        },
+        "abstract": {
+            "type": "string"
+        },
+        "coordinate space": {
+            "enum": [
+                "MNI",
+                "Talaraich",
+                "Unclear"
+            ]
+        },
+        "contrasts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition1": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "condition2": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "figures": {
+                        "type": "array",
+                        "items": {
+                            "type": "url"
+                        }
+                    },
+                    "coordinates": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "roi_name": {
+                                    "type": "string"
+                                },
+                                "xyz": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "number"
+                                    },
+                                    "minItems": 3,
+                                    "maxItems": 3
+                                },
+                                "size": {
+                                    "type": "number"
+                                },
+                                "zscore": {
+                                    "type": "number"
+                                },
+                                "p_value": {
+                                    "type": "number"
+                                }
+                            },
+                            "required":["xyz"]
+                        }
+                    }
+                },
+                "required":["condition1","condition2"]
+            }
+        },
+        "stimuli": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "stim_type": {
+                        "enum": ["word_list"]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": ["stim_type","value"]
+            }
+        }
+    },
+    "required": ["DOI","contrasts","stimuli"]
+}

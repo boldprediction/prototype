@@ -1,0 +1,110 @@
+
+{% extends 'simulate/base.html' %}
+
+
+
+{% block content %}
+
+<style type="text/css">
+    .btn {
+        width:33%;
+        border-radius: 0px;
+    }
+ </style>
+<body>
+
+
+<div style="position:fixed;
+            z-index: 2; /* above everything else */
+            top:0; left:0; bottom:0; right:0;
+            background:rgba(0,0,0,.5);
+             display:none;
+" id = 'blackout'> <!-- possibly some loading-animation and/or explanation --> </div>
+
+<div class="col-sm-1">
+    </div>
+<div class="col-sm-6">
+
+    <h2>New ROIs</h2>
+    <br>
+    <br>
+    <form method="POST" class="form-horizontal">{% csrf_token %}
+
+        <table class="table">
+            {{ form2.management_form }}
+
+            {% for form in form2.forms %}
+                {% if forloop.first %}
+                    <thead>
+                    <tr>
+                        {% for field in form.visible_fields %}
+                                <th>{{ field.label|capfirst }}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                {% endif %}
+                <tr class="tmp-formset_row">
+                    {% for field in form.visible_fields %}
+                        <td>
+                            {# Include the hidden fields in the form #}
+                            {% if forloop.first %}
+                                {% for hidden in form.hidden_fields %}
+                                    {{ hidden }}
+                                {% endfor %}
+                            {% endif %}
+                            {{ field.errors.as_ul }}
+                            {{ field }}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+        <!--<br>-->
+        <!--<a class="add-row" href="javascript:void(0)"> add</a>-->
+        <button type="submit" class="save btn btn-success" id = "submit_button">Submit</button>
+        <!--<label for="baseline_choice">Show ROI labels</label>-->
+
+    </form>
+</form>
+</div>
+    <div class="col-sm-4">
+
+        <br>
+        <br>
+        <br>
+
+        <br>
+
+    <h3> Existing analyses: </h3>
+
+        <iframe id = "iframe_pos_3" width = 90% height = 40% src = 'existing_roi_analyses.html?c_id={{c_id}}' frameBorder="0"></iframe>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{'/static/jquery.formset.js' %}"></script>
+
+       <script type="text/javascript">
+           $(function() {
+               $('#myForm tbody tr').formset({
+                    <!--addText: 'add-row',-->
+                   prefix: coordinates
+               });
+           })
+       </script>
+
+{% endblock %}
+
+
+
+
+
+

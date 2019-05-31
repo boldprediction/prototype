@@ -1,0 +1,7 @@
+.DS_Store
+.vscode/
+*.pyc
+venv/
+boldpredictions/static/
+**/cache/
+template/

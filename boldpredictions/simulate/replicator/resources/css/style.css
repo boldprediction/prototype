@@ -1,0 +1,32 @@
+div {
+	padding: 10px;
+	border: 1px solid #888;
+}
+
+div.Experiment {
+	border: 2px solid #aaa;
+	margin: 30px;
+}
+
+div.Contrast {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Flatmap display */
+div.Flatmap > img {
+	height: 400px;
+}
+
+/* ROI flatmap thing */
+div.GroupCoordinateAnalysis > img {
+	height: 400px;
+}
+
+/* 3D surface display */
+div.ThreeD {
+	display: inline-block;
+}
+div.ThreeD > img {
+	height: 300px;
+}

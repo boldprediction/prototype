@@ -1,0 +1,15 @@
+error from the xor django package: ImportError: No module named util
+changed in /usr/local/lib/python2.7/dist-packages/xorformfields/forms/fields.py util -> utils
+abandonned this idea:
+from xorformfields.forms import (
+    FileOrURLField, MutuallyExclusiveRadioWidget,
+    MutuallyExclusiveValueField, FileOrURLWidget,
+    )
+    test_field = MutuallyExclusiveValueField(
+                fields=(forms.IntegerField(), forms.IntegerField()),
+                widget=MutuallyExclusiveRadioWidget(widgets=[
+                    forms.Select(choices=[(1, 1), (2, 2)]),
+                    forms.TextInput(attrs={'placeholder': 'Enter a number'}),
+                ]))
+
+

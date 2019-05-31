@@ -1,0 +1,483 @@
+{
+  "Binder2005": {
+    "authors": ["J. R. Binder",
+      "C. F. Westbury",
+      "K. A. McKiernan",
+      "E. T. Possing",
+      "D. A. Medler"],
+    "DOI": "10.1162/0898929054021102",
+    "title": "Distinct brain systems for processing concrete and abstract concepts.",
+    "coordinate_space": "unclear",
+    "contrasts": {"contrast1": 
+    { "condition1" : ["concrete"],
+      "condition2" : ["abstract"],
+      "coordinates": [ {"name": "L angular g",
+        "xyz": [-37, -74, 26],
+        "zscore": 3.71},
+        {"name": "R angular g",
+          "xyz": [52, -58, 22],
+          "zscore": 4.05},
+        {"name": "R angular g",
+          "xyz": [54, -48, 33],
+          "zscore": 3.88}
+      ],
+      "figures": ["images/Binder2005/Binder2005Figure1.pdf",
+        "images/Binder2005/Binder2005Figure2.pdf"]
+    },
+      "contrast2": { 
+        "condition1" : ["abstract"],
+        "condition2" : ["concrete"],
+        "coordinates":[ {"name": "L precentral g",
+          "xyz": [-48, 9, 25],
+          "zscore": -5.86},
+          {"name": "L precentral g",
+            "xyz": [-48, -7, 40],
+            "zscore": -4.33},
+          {"name": "L inf. frontal g",
+            "xyz": [-46, 18, -4],
+            "zscore": -4.16}
+        ],
+        "figures": [""]
+      }
+    },
+    "stimuli": {
+      "concrete": {
+        "type": "word_list",
+        "value": "apple, autumn, banana, bridge, cabin, canal, carrot, casket, cement, chin, circus, cloud, coffee, engine, flea, infant, island, leaf, lemon, lion, liquid, meadow, napkin, noose, orange, parade, pencil, pigeon, planet, pliers, plug, pole, potato, record, ring, saloon, sponge, spoon, steam, summer, sunset, swamp, tennis, toilet, tomato, truck, vodka, walnut, window, yacht"
+      },
+      "abstract": {
+        "type": "word_list",
+        "value": "advice, affair, aspect, assent, belief, blame, claim, custom, debut, deceit, desire, dogma, enigma, event, excuse, factor, gain, gist, glut, guess, heresy, hybrid, issue, item, malice, manner, method, motive, origin, output, outset, pardon, phase, plea, realm, regret, result, rumor, scheme, scorn, soul, supply, tale, tenure, theory, topic, treaty, upkeep, virtue, vista"
+      }
+    }
+  },
+
+  "Barrosloscertales2012": {
+    "authors": [],
+    "DOI": "10.1093/cercor/bhr324",
+    "title": "Reading Salt Activates Gustatory Brain Regions: fMRI Evidence for Semantic Grounding in a Novel Sensory Modality",
+    "coordinate_space": "mni",
+    "contrasts": {
+      "contrast1": { 
+        "condition1" : ["tasteword"],
+        "condition2" : ["controlword"],
+        "coordinates": [ {"name": "L Insula",
+        "xyz": [-36, 6, -9],
+        "tscore": 6.89,
+        "voxel#": 41},
+        {"name": "L frontal operculum/lateral OFC",
+          "xyz": [-39, 33, -15],
+          "tscore": 4.67,
+          "voxel#": 19},
+        {"name": "L Superior temporal gyrus/angular gyrus",
+          "xyz": [-33, -60, 30],
+          "tscore": 4.70,
+          "voxel#": 23},
+        {"name": "B Posterior cingulate",
+          "xyz": [-3, -36, 33],
+          "tscore": 5.87,
+          "voxel#": 53},
+        {"name": "L Precentral/middle frontal gyrus",
+          "xyz": [-36, 21, 48],
+          "tscore": 5.50,
+          "voxel#": 48},
+        {"name": "L Superior prefrontal cortex",
+          "xyz": [-3, 57, 30],
+          "tscore": 5.49,
+          "voxel#": 54},
+        {"name": "L Superior/middle frontal gyrus",
+          "xyz": [-3, 30, 51],
+          "tscore": 4.60,
+          "voxel#": 11},
+        {"name": "B Cuneus",
+          "xyz": [0, -87, 15],
+          "tscore": 4.80,
+          "voxel#": 27},
+        {"name": "R Cuneus/precuneus",
+          "xyz": [15, -75, 18],
+          "tscore": 5.14,
+          "voxel#": 22},
+        {"name": "L Substantia nigra",
+          "xyz": [-12, -24, -9],
+          "tscore": 5.56,
+          "voxel#": 20},
+        {"name": "L Subthalamic nucleus/substantia nigra/Thalamus",
+          "xyz": [-9, -12, -9],
+          "tscore": 5.26,
+          "voxel#": 25}
+      ],
+      "figures": ["",
+        ""]
+    },
+      "contrast2": { "condition1" : ["controlword"],
+        "condition2" : ["baseline"],
+        "coordinates":[ {"name": "L supplementary motor area",
+          "xyz": [-3, 3, 60],
+          "tscore": 9.03},
+          {"name": "L anterior cingulate",
+            "xyz": [-9, 21, 48],
+            "tscore": 4.52},
+          {"name": "L Fusiform gyrus",
+            "xyz": [-45, -51, -18],
+            "tscore": 8.00},
+          {"name": "L Fusiform gyrus",
+            "xyz": [-42, -42, -18],
+            "tscore": 6.42},
+          {"name": "L Middle temporal",
+            "xyz": [-60, -33, 3],
+            "tscore": 5.86},
+          {"name": "L Premotor cortex",
+            "xyz": [-51, -6, 45],
+            "tscore": 8.00},
+          {"name": "L Broca's area",
+            "xyz": [-36, 30, 9],
+            "tscore": 7.67},
+          {"name": "L Inferior frontal cortex",
+            "xyz": [-51, -6, 45],
+            "tscore": 8.00},
+          {"name": "R Precentral gyrus",
+            "xyz": [54, 0, 42],
+            "tscore": 4.81},
+          {"name": "L Putamen",
+            "xyz": [-24, -9, 6],
+            "tscore": 4.95},
+          {"name": "L Lateral globus pallidus",
+            "xyz": [-21, -6, -3],
+            "tscore": 4.38}
+        ],
+        "figures": []
+      }
+    },
+
+    "stimuli": {
+      "tasteword": {"type": "word_list",
+        "value": "olive, anise, celery, anchovy, coffee, candy, onion, beer, chocolate, sausage, cauliflower, pork, fanta, flan, strawberry, cookie, chili, stew, ham, lemon, mint, hake, jam, swordfish, honey, mustard, cream, paella, bread, pasta, turkey, fish, pineapple, pizza, banana, chicken, cheese, salt, frankfurter, salami, sauce, sardine, cider, omelet, grape, wine, yogurt"},
+      "controlword": {"type": "word_list",
+        "value": "hoop, bus, aircraft, bamboo, tray, swimsuit, boat, trunk, blouse, button, brazier, buddha, armchair, cavalcade, cactus, coach, helmet, hut, kite, dart, axis, shield, bassoon, lighthouse, paper, bellows, crochet, jade, canvas, hank, cloak, motel, shovel, passport, hair, shutter, pole, skin, peg, pool, desk, radiator, rake, grill, sack, footpath, sofa, ring, rudder, railroad"},
+      "baseline": {"type": "word_list",
+        "value": "######"}
+    }
+  },
+
+
+  "Davis2004": {
+    "authors": [],
+    "DOI": "10.1016/S0093-934X(03)00471-1",
+    "title": "Neural responses to morphological, syntactic, and semantic properties of single words: An fMRI study",
+    "coordinate_space": "MNI",
+    "contrasts": {"contrast1": { "condition1" : ["simple verbs","inflected verbs","simple nouns/adjectives","derived nouns/adjectives"],
+      "condition2" : ["baseline"],
+      "coordinates": [ {"name": "L posterior middle temporal gyrus",
+        "xyz": [-63, -42, -3],
+        "zscore": 4.48},
+        {"name": "L anterior fusiform gyrus",
+          "xyz": [-45, -42, 12],
+          "zscore": 3.74},
+        {"name": "L anterior cingulate cortex",
+          "xyz": [-6, 27, -42],
+          "zscore": 4.33},
+        {"name": "L interior frontal gyrus (ventral)",
+          "xyz": [-48, 30, -15],
+          "zscore": 4.24},
+        {"name": "L inferior frontal gyrus (dorsal)",
+          "xyz": [-48, 24, 18],
+          "zscore": 4.21},
+        {"name": "L hippocampus",
+          "xyz": [-18, -9, -15],
+          "zscore": 4.15},
+        {"name": "R anterior cingulate",
+          "xyz": [9, 27, 42],
+          "zscore": 3.82},
+        {"name": "R premotor",
+          "xyz": [33, -12, 60],
+          "zscore": 3.69}
+      ],
+      "figures": ["images/Davis2004/Davis2004Figure1.pdf"]
+    },
+      "contrast2": { "condition1": ["simple verbs", "inflected verbs"],
+        "condition2": ["simple nouns/adjectives", "derived nouns/adjectives"],
+
+        "coordinates": [ {"name": "L posterior middle temporal gyrus",
+          "xyz": [-54, -48, -6],
+          "zscore": 4.94},
+          {"name": "L anterior frontal cortex",
+            "xyz": [-27, 48, -12],
+            "zscore": 3.17}
+
+        ],
+        "figures": ["images/Davis2004/Davis2004Figure1.pdf"]
+      }
+    },
+
+
+    "stimuli": {
+      "simple verbs": {"type": "word_list",
+        "value": "clench, starve, applaud, condemn, diagnose, pronounce; drench, pursue, presume, swallow, dispense, embarrass; contradict, freeze, travel, portray, commence, announce; cavort, stroll, forfeit, tremble, paralyse, sprinkle; grovel, plunge, rummage, succumb, jettison, persuade; pierce, disrupt, wriggle, abandon, perceive, quench; consult, assemble, salvage, cringe, shrivel, construct; confide, attract, snatch, clutch, comprehend, corrode; swerve, predict, scream, screech, transmit, supervise; astound, marvel, bounce, sustain, ricochet, improvise; cleave, conclude, grieve, stumble, scrounge, scavenge; glisten, snivel, sneeze, disturb, straddle, quadruple"},
+      "inflected verbs": {"type": "word_list",
+        "value": "groped, thwarted, fetches, bleeds, flinging, wallowing; kneels, shunted, quaking, tempted, flirting, prancing; drowns, blinked, governs, borrowed, snooping, ignoring; mourns, snoozed, cheated, choking, grinding, obliges; served, sculpts, chooses, scalded, stealing, shrinking; raised, sniffed, rouses, munches, swallowing, squelching; teased, chirped, preaches, spawning, chucking, throwing; solved, flaunts, boasting, creates, scolded, flushing; greets, swilling, trudged, marched, wringing, launching; follows, parried, browsing, winced, flinches, churning; learns, teaches, spanked, quoting, twirling, walloped; spends, scuffed, scraped, seizes, pouncing, clinching"},
+      "simple nouns/adjectives": {"type": "word_list",
+        "value": "quaint, menace, scandal, fatigue, merchant, orthodox; strand, sorrow, forlorn, lozenge, platform, placenta; stubborn, squire, circuit, throng, stamina, mediocre; ballot, grammar, occult, grimace, succinct, bungalow; shrewd, pastel, symptom, pilgrim, portrait, miracle; sequel, nephew, oblique, satchel, trombone, somersault; chaste, virtue, mundane, quarrel, cataract, utensil; grudge, mayhem, turmoil, flannel, tranquil, protocol; mosque, mortar, peculiar, strange, sparrow, sonata; thorough, stanza, tribute, tariff, mackerel, haddock; verdict, trapeze, strict, severe, minstrel, specimen; freight, gospel, sincere, monarch, sovereign, charlatan"},
+      "derived nouns/adjectives": {"type": "word_list",
+        "value": "lawful, heaviness, springy, keeper, thoughtful, fitness; fiendish, swimmer, worthy, singer, selfish, painful; babyish, honesty, youngish, cooker, killer, careless; calmness, longish, boyish, dealer, payable, darkness; warmish, talker, firmness, starry, scratchy, player; richness, hellish, healer, badness, cheerful, lovely; bubbly, laughable, brutish, beastly, helper, frankness; merciful, weaver, stormy, sleepy, kindness, goodness; readable, offender, guilty, dancer, agreeable, smoker; chilly, coldness, freakish, hunter, tricky, valuable; lender, traceable, girlish, runner, illness, injury; lonely, vagueness, pinkish, employer, manager, openness"},
+      "baseline": {"type": "word_list",
+        "value": "ffffff, ffff, gggggggg, ggggggg"}
+    }
+  },
+  "Bedny2013": {
+    "authors": [],
+    "DOI": "10.3758/s13415-013-0217-z",
+    "title": "Shindigs, brunches, and rodeos: The neural basis of event words",
+    "coordinate_space": "MNI",
+    
+    "contrasts": {"contrast1": { "condition1" : ["verb movement"],
+      "condition2" : ["noun animals"],
+      "coordinates": [ {"name": "L superior/Middle temporal gyrus (BA 22)",
+        "xyz": [-62, -52, 8],
+        "tscore": 5.76 }
+      ],
+
+      "figures": []
+    },
+      "contrast2": { "condition1" : ["noun events"],
+        "condition2" : ["noun fruit/veggie"],
+        "coordinates": [ {"name": "L superior/Middle frontal gyri (BA 9/10)",
+          "xyz": [-12, 54, 42],
+          "tscore": 6.3},
+          {"name": "L posterior middle temporal gyrus (BA 39)",
+            "xyz": [-44, -60, 24],
+            "tscore": 6.11},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [-54, -12, -34],
+            "tscore": 5.90},
+          {"name": "L middle temporal gyrus (BA 21)",
+            "xyz": [-54, -50, 4],
+            "tscore": 5.34}
+        ],
+
+        "figures": []
+      },
+      "contrast3": { "condition1": ["verb emission", "verb movement", "verb perception"],
+        "condition2": ["noun animals", "noun fruit/veggie", "noun events"],
+
+        "coordinates": [ {"name": "L superior/Middle temp. gyri (BA 22/38)",
+          "xyz": [-50, 10, 4],
+          "tscore": 5.36},
+          {"name": "L inferior parietal lobule (BA 40)",
+            "xyz": [-60, -42, 28],
+            "tscore": 5.27},
+          {"name": "L Insula (BA 13)",
+            "xyz": [-48, -40, 16],
+            "tscore": 4.19},
+          {"name": "L superior temporal gyrus (BA 22)",
+            "xyz": [-50, -54, 16],
+            "tscore": 4.09}
+
+
+        ],
+        "figures": ["",
+          ""]
+      },
+      "contrast4": { "condition1": ["noun events"],
+        "condition2": ["noun animals", "noun fruit/veggie"],
+
+        "coordinates": [ {"name": "L superior frontal gyrus (BA 9/10",
+          "xyz": [-12, 54, 42],
+          "tscore": 6.74},
+          {"name": "L middle temporal gyrus (BA 21/39)",
+            "xyz": [-56, -48, 4],
+            "tscore": 6.06},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [-54, -12, -34],
+            "tscore": 5.77},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [18, -54, 64],
+            "tscore": 5.80},
+          {"name": "R precentral gyrus (BA 6/4)",
+            "xyz": [36, -22, 70],
+            "tscore": 4.99}
+
+        ],
+        "figures": ["images/Bedny2013/Bedny2013Figure1.pdf"]
+      },
+      "contrast5": { "condition1": ["verb emission","verb movement","verb perception"],
+        "condition2": ["noun animals", "noun fruit/veggie"],
+
+        "coordinates": [ {"name": "L superior parietal lobule (BA 40)",
+          "xyz": [-22, -44, 60],
+          "tscore": 5.22},
+          {"name": "L postcentral gyrus (BA 3/4)",
+            "xyz": [-20, -42, 68],
+            "tscore": 4.30},
+          {"name": "L inferior parietal lobule (BA 40)",
+            "xyz": [-60, -42, 28],
+            "tscore": 5.17},
+          {"name": "L supramarginal gyrus (BA 40)",
+            "xyz": [-50, -46, 30],
+            "tscore": 5.15},
+          {"name": "L superior/Middle temporal gyrus (BA 22)",
+            "xyz": [-60, -52, 8],
+            "tscore": 5.06},
+          {"name": "R postcentral gyrus (BA 3)",
+            "xyz": [22, -32, 62],
+            "tscore": 4.88}
+        ],
+        "figures": []
+      }
+    },
+
+    "stimuli": {
+      "noun animals": {
+        "type": "word_list",
+        "value": "aardvark, alligator, alpaca, antelope, armadillo, beaver, butterfly, camel, caterpillar, chameleon, chinchilla, cockroach, cougar, coyote, crane, elephant, falcon, gazelle, giraffe, gopher, gorilla, hamster, hedgehog, heron, hyena, iguana, lemur, lizard, llama, meerkat, mongoose, mosquito, octopus, ostrich, parakeet, peacock, pelican, pigeon, platypus, porcupine, porpoise, rhinoceros, salamander, shark, spider, vulture, warthog, whale"
+      },
+      "noun fruit/veggie": {
+        "type": "word_list",
+        "value": "acorn, almond, apricot, artichoke, asparagus, birch, branch, bush, cactus, carnation, cashew, cedar, chrysanthemum, clementine, clover, coconut, daffodil, dandelion, date, evergreen, fern, gourd, grape, herb, kiwi, maple, mushroom, oak, orange, papaya, parsnip, pistachio, pomegranate, radish, rhubarb, root, seed, shrub, sycamore, tangerine, turnip, twig, vine, watercress, weed, yam, zucchini"
+      },
+      "noun events": {
+        "type": "word_list",
+        "value": "accident, adventure, avalanche, banquet, blizzard, brunch, burglary, carnival, ceremony, concert, contest, coronation, cyclone, dinner, drought, episode, exam, excursion, famine, festival, funeral, gala, holiday, hurricane, incident, lesson, luncheon, marathon, movie, nightmare, pageant, prank, prom, quest, reunion, robbery, rodeo, seminar, sermon, session, shindig, speech, storm, supper, surgery, tornado, tournament, trial, vacation, wedding"
+      },
+      "verb emission": {
+        "type": "word_list",
+        "value": "babble, bellow, blare, blaze, buzz, chant, chatter, chime, chuckle, clang, click, crackle, creak, cry, flare, flash, flicker, gleam, glisten, glow, groan, growl, grunt, hiss, hoot, howl, hum, jingle, moan, mumble, purr, reek, ring, roar, rumble, rustle, shimmer, shine, shriek, sing, sparkle, squawk, squeak, squeal, stink, thud, twinkle, wail, whine, whisper"
+      },
+      "verb movement": {
+        "type": "word_list",
+        "value": "bounce, climb, crawl, dance, drift, drop, float, frolic, gallop, glide, hike, hobble, jump, leap, limp, meander, paddle, prance, prowl, revolve, ride, roam, roll, rotate, saunter, scamper, scoot, scurry, skip, slide, slither, sneak, spin, stagger, stomp, stroll, strut, stumble, swim, swing, trek, trot, twirl, twist, waddle, wade, walk, wander, whirl, zigzag"
+      },
+      "verb perception": {
+        "type": "word_list",
+        "value": "admire, ascertain, behold, caress, detect, discern, discover, eavesdrop, evaluate, examine, explore, frisk, gape, gawk, gaze, glance, glimpse, identify, inspect, investigate, leer, lick, notice, observe, ogle, overhear, overlook, peek, peep, peer, perceive, peruse, pet, probe, prod, recognize, rub, scan, scrutinize, sense, smell, sniff, snoop, spy, stare, stroke, tap, taste, view, witness"
+      }
+    }
+  },
+  "Bedny2008": {
+    "authors": [],
+    "DOI": "10.1093/cercor/bhn018",
+    "title": "Semantic Adaptation and Competition during Word Comprehension",
+    "coordinate_space": "MNI",
+    
+    "contrasts": {"contrast1": { "condition1" : ["verb movement"],
+      "condition2" : ["noun animals"],
+      "coordinates": [ {"name": "L superior/Middle temporal gyrus (BA 22)",
+        "xyz": [-62, -52, 8],
+        "tscore": 5.76 }
+      ],
+
+      "figures": []
+    },
+      "contrast2": { "condition1" : ["noun events"],
+        "condition2" : ["noun fruit/veggie"],
+        "coordinates": [ {"name": "L superior/Middle frontal gyri (BA 9/10)",
+          "xyz": [-12, 54, 42],
+          "tscore": 6.3},
+          {"name": "L posterior middle temporal gyrus (BA 39)",
+            "xyz": [-44, -60, 24],
+            "tscore": 6.11},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [-54, -12, -34],
+            "tscore": 5.90},
+          {"name": "L middle temporal gyrus (BA 21)",
+            "xyz": [-54, -50, 4],
+            "tscore": 5.34}
+        ],
+
+        "figures": []
+      },
+      "contrast3": { "condition1": ["verb emission", "verb movement", "verb perception"],
+        "condition2": ["noun animals", "noun fruit/veggie", "noun events"],
+
+        "coordinates": [ {"name": "L superior/Middle temp. gyri (BA 22/38)",
+          "xyz": [-50, 10, 4],
+          "tscore": 5.36},
+          {"name": "L inferior parietal lobule (BA 40)",
+            "xyz": [-60, -42, 28],
+            "tscore": 5.27},
+          {"name": "L Insula (BA 13)",
+            "xyz": [-48, -40, 16],
+            "tscore": 4.19},
+          {"name": "L superior temporal gyrus (BA 22)",
+            "xyz": [-50, -54, 16],
+            "tscore": 4.09}
+
+
+        ],
+        "figures": ["",
+          ""]
+      },
+      "contrast4": { "condition1": ["noun events"],
+        "condition2": ["noun animals", "noun fruit/veggie"],
+
+        "coordinates": [ {"name": "L superior frontal gyrus (BA 9/10",
+          "xyz": [-12, 54, 42],
+          "tscore": 6.74},
+          {"name": "L middle temporal gyrus (BA 21/39)",
+            "xyz": [-56, -48, 4],
+            "tscore": 6.06},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [-54, -12, -34],
+            "tscore": 5.77},
+          {"name": "L inferior temporal gyrus (BA 20)",
+            "xyz": [18, -54, 64],
+            "tscore": 5.80},
+          {"name": "R precentral gyrus (BA 6/4)",
+            "xyz": [36, -22, 70],
+            "tscore": 4.99}
+
+        ],
+        "figures": ["images/Bedny2013/Bedny2013Figure1.pdf"]
+      },
+      "contrast5": { "condition1": ["verb emission","verb movement","verb perception"],
+        "condition2": ["noun animals", "noun fruit/veggie"],
+
+        "coordinates": [ {"name": "L superior parietal lobule (BA 40)",
+          "xyz": [-22, -44, 60],
+          "tscore": 5.22},
+          {"name": "L postcentral gyrus (BA 3/4)",
+            "xyz": [-20, -42, 68],
+            "tscore": 4.30},
+          {"name": "L inferior parietal lobule (BA 40)",
+            "xyz": [-60, -42, 28],
+            "tscore": 5.17},
+          {"name": "L supramarginal gyrus (BA 40)",
+            "xyz": [-50, -46, 30],
+            "tscore": 5.15},
+          {"name": "L superior/Middle temporal gyrus (BA 22)",
+            "xyz": [-60, -52, 8],
+            "tscore": 5.06},
+          {"name": "R postcentral gyrus (BA 3)",
+            "xyz": [22, -32, 62],
+            "tscore": 4.88}
+        ],
+        "figures": []
+      }
+    },
+    "stimuli": {
+      "noun animals": {
+        "type": "word_list",
+        "value": "bass, bear, bird, bull, butterfly, cat, chicken, cow, crab, crane, crow, deer, dog, duck, eagle, fish, fox, frog, giraffe, goat, goose, hawk, horse, lion, lizard, lobster, monkey, moth, mouse, mule, owl, pig, pigeon, rabbit, rat, seal, shark, sheep, shrimp, skunk, snake, sparrow, squid, swan, tiger, turkey, turtle, wasp, whale, wolf"
+      },
+      "noun natural kind": {
+        "type": "word_list",
+        "value": "bay, boulder, branch, brook, bud, bush, cactus, canyon, cliff, creek, desert, dune, field, fog, forest, glacier, gorge, grass, gulf, hill, iceberg, inlet, island, lagoon, lake, leaf, marsh, mist, moon, moss, mountain, ocean, pebble, pond, puddle, rainbow, rock, root, rose, sand, sea, shore, sky, stream, sun, swamp, tree, twig, valley, weed"
+      },
+      "noun tool": {
+        "type": "word_list",
+        "value": "axe, bow, broom, brush, cane, chisel, comb, crayon, crutches, drill, duster, flask, fork, grater, gun, hammer, harpoon, hinge, hoe, jug, keyboard, knife, mallet, mop, mug, peeler, pen, pencil, pick, pliers, rake, razor, rope, saw, scissors, shield, skateboard, spade, spear, sponge, spoon, staple, stilts, sword, tongs, tray, vacuum, whisk, wrench, zipper"
+      },
+      "verb action": {
+        "type": "word_list",
+        "value": "catapult, chase, chop, clap, clobber, crawl, cut, dance, dig, fly, grab, grasp, hike, hop, jog, jump, kick, leap, meander, pelt, prance, roll, rotate, run, scrape, shake, shovel, shuffle, skate, ski, slam, slap, slice, slide, spin, sprint, stir, stomp, stroke, stroll, strut, sweep, swim, swing, toss, tumble, turn, twirl, wade, wrestle"
+      },
+      "verb body/nohuman verb": {
+        "type": "word_list",
+        "value": "ache, awake, belch, blaze, bleed, blister, bloom, blossom, breathe, bubble, bulge, burp, cough, decay, doze, drool, erode, exhale, fade, faint, fizzle, flicker, foam, gleam, glow, hiccup, inhale, itch, leak, ooze, puke, reek, ripen, rot, rust, sag, shed, sizzle, sleep, slumber, sneeze, snooze, snore, sparkle, sprout, squeak, stink, sweat, swell, wilt"
+      },
+      "verb thought": {
+        "type": "word_list",
+        "value": "appease, astound, blame, boast, calm, charm, cry, demean, denounce, detest, dispute, distrust, entice, fear, gladden, guess, hate, hope, irk, judge, know, lament, laud, learn, loathe, love, marvel, mock, mourn, nag, perplex, pity, please, praise, presume, read, relish, revile, scare, shock, spook, stun, tempt, think, thrill, trust, unnerve, vex, warn, wish"
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "networks": {
+    "authors": [""],
+    "DOI": "",
+    "title": "",
+    "coordinate_space": "",
+    "contrasts": {
+      "numbers": {
+        "condition1" : ["numbers"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "places": {
+        "condition1" : ["places"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "visual": {
+        "condition1" : ["visual"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "auditory": {
+        "condition1" : ["auditory"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      }
+      },
+    "stimuli": {
+      "numbers": {
+        "type": "word_list",
+        "value": "one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, twenty, thirty, forty, fifty, hundred, thousand, million, half, quarter, pair, few, several, many, some, less, more"
+      },
+      "places": {
+        "type": "word_list",
+        "value": "house, building, hotel, office, parking, lot, park, street, road, sidewalk, highway, path, field, mountain, forest, beach, cinema, restaurant, bistro, shop, store"
+      },
+      "visual": {
+        "type": "word_list",
+        "value": "colorless, white, ivory, yellow, gold, orange, green, olive, turquoise, azure, pink, crimson, maroon, lavender, purple, silver, brown, black, mottled, red, ruby, blue, spotted, round, oval, triangular, rectangular, square, shapeless, immense, massive, large, tiny, small, tall, short, wide, long, narrow, lean, round, flat, curved, wavy, ruffled, angular, hollow, tapered, wiry, lopsided, freckled, wrinkled, striped, bright, clear, glossy, jeweled, fiery, shimmering, muddy, drab, dark, grimy, worn, cluttered, fresh, flowery, transparent, sheer, opaque, muscular, handsome, robust, fragile, pale, perky, lacy, shadowy"
+      },
+      "auditory": {
+        "type": "word_list",
+        "value": "crash, squawk, crackle, chime, ring, thud, whine, buzz, laugh, silence, bump, bark, clink, gurgle, chuckle, boom, bleat, hiss, giggle, cry, thunder, bray, snort, guffaw, bawled, bang, blare, bellow, sing, crow, roar, rumble, growl, hum, chatter, scream, grate, whimper, mutter, mumble, screech, slam, stammer, murmur, wail, shout, clap, snap, whisper, babble, yell, stomp, rustle, sigh, cheer, whistle, jangle, whir, hush, storm, chirp"
+      },
+      "baseline": {
+        "type": "word_list",
+        "value": "#####"
+      }
+    }
+  }
+}

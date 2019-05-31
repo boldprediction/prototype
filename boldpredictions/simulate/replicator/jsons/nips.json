@@ -1,0 +1,76 @@
+{
+  "KRNS": {
+    "authors": [""],
+    "DOI": "",
+    "title": "",
+    "coordinate_space": "",
+    "contrasts": {
+      "condition_01": {
+        "condition1" : ["mammals"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "condition_02": {
+        "condition1" : ["interaction"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "condition_03": {
+        "condition1" : ["urban_structures"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "condition_04": {
+        "condition1" : ["communication"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "condition_05": {
+        "condition1" : ["people"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      }    
+      },
+    "stimuli": {
+      "mammals": {
+        "type": "word_list",
+        "value": "mammals mammal marine_mammals primates organisms microorganisms humans microbial animal microbes reptiles creatures species Humans animals crocodiles parasites rodents pathogens organism"
+      },
+      "interaction": {
+        "type": "word_list",
+        "value": "do somebody know guy me not somebody_else anybody you kid really maybe gotta someone think I honestly just probably want"
+      },
+      "urban_structures": {
+        "type": "word_list",
+        "value": "overpass plaza hilltop expressway highway thoroughfare airstrip route Expressway walkway bridge roof downtown venue road facade chopper hill boulevard flyover"
+      },
+      "communication": {
+        "type": "word_list",
+        "value": "Text text communication writing communicate written communicating Writing texts composing handwritten communicated typed Messages conversational Written coded communicates Address expressing"
+      },
+      "people": {
+        "type": "word_list",
+        "value": "athlete musician person motivational_speaker friend skier son daughter someone entertainer singer him classmate woman snowboarding fiancee herself teenager father regrets"
+      },                                                 
+      "baseline": {
+        "type": "word_list",
+        "value": "#####"
+      }
+    }
+  }
+}

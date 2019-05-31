@@ -1,0 +1,4 @@
+{
+    "build_dir":"../template",
+    "model_dir":{ "english1000":"/home/ubuntu/model_data"}
+}

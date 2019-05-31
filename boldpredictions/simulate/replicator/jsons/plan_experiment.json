@@ -1,0 +1,92 @@
+{
+  "goodevil": {
+    "authors": [""],
+    "DOI": "",
+    "title": "",
+    "coordinate_space": "",
+    "contrasts": {
+      "goodevil1": {
+        "condition1" : ["good1"],
+        "condition2" : ["evil1"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "evilgood1": {
+        "condition1" : ["evil1"],
+        "condition2" : ["good1"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "goodevil2": {
+        "condition1" : ["good2"],
+        "condition2" : ["evil2"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "evilgood2": {
+        "condition1" : ["evil2"],
+        "condition2" : ["good2"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "good1evil2": {
+        "condition1" : ["good1"],
+        "condition2" : ["evil2"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "good2evil1": {
+        "condition1" : ["good2"],
+        "condition2" : ["evil1"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "evil1good22": {
+        "condition1" : ["evil1"],
+        "condition2" : ["good2"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "evil2good11": {
+        "condition1" : ["evil2"],
+        "condition2" : ["good1"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      }
+      },
+    "stimuli": {
+      "good1": {
+        "type": "word_list",
+        "value": "good, honest, honorable, humane, principled, proper, virtuous, moral, righteous, proper"
+      },
+      "evil1": {
+        "type": "word_list",
+        "value": "evil, bad, corrupt, destructive, hateful, heinous, hideous, malevolent, malicious, nefarious, vicious, vile, villainous"
+      },
+      "good2": {
+        "type": "word_list",
+        "value": "good, generosity, love, sacrifice, gift, help, fairness, community"
+      },
+      "evil2": {
+        "type": "word_list",
+        "value": "evil, danger, murder, kill, violence, rape, treason"
+      }
+    }
+  }
+}

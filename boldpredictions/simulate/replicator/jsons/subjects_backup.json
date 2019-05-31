@@ -1,0 +1,45 @@
+{
+        "JG": {
+              "pycortex_surface": "JGfs",
+              "xfm": "20110321JG_auto2",
+              "models": {"english1000": "JG_english1000_udwt.hf5"}
+        },
+        "ML": {
+              "pycortex_surface": "MLfs2",
+              "xfm": "20121210ML_auto1",
+              "models": {"english1000": "ML_english1000_udwt.hf5"}
+        },
+        "AH": {
+              "pycortex_surface": "AHfs",
+              "xfm": "AHfs_auto1",
+              "models": {"english1000": "AH_english1000_udwt.hf5"}
+        },
+        "DS": {
+              "pycortex_surface": "DSfs",
+              "xfm": "20121216DS_auto",
+              "models": {"english1000": "DS_english1000_udwt.hf5"}
+        },
+        "NNS0": {
+              "pycortex_surface": "NNS0",
+              "xfm": "20140315NNS0_auto2",
+              "models": {"english1000": "NNS0_english1000_udwt.hf5"}
+        },
+        "BGfs": {
+              "pycortex_surface": "BGfs",
+              "xfm": "20131210BG_auto",
+              "models": {"english1000": "BG_english1000_udwt.hf5",
+                         "word2vec":   "BG-model-fm2.hf5"}
+        },
+        "WHfs": {
+              "pycortex_surface": "WHfs",
+              "xfm": "20110520WH-audioloc_auto",
+              "models": {"english1000": "WH_english1000_udwt.hf5",
+                         "word2vec":   "WH-model-fm2.hf5"}
+        },
+        "ANfs": {
+              "pycortex_surface": "ANfs",
+              "xfm": "20150722AN_auto_reading",
+              "models": {"english1000": "AN_english1000_udwt.hf5",
+                         "word2vec":   "AN-model-fm2.hf5"}
+        }
+}

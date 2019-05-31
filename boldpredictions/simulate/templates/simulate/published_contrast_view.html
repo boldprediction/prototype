@@ -1,0 +1,19 @@
+{% extends 'simulate/base.html' %}
+
+{% block content %}
+
+<!--<base target="_parent" />-->
+
+
+<br>
+<h4> {{ title | safe  }} </h4>
+
+<h5>{{authors|safe}}</h5>
+
+<h5>{{DOI|safe}}</h5>
+
+{{ figures_html | safe  }}
+
+{{ published_figures_html | safe  }}
+
+{% endblock %}

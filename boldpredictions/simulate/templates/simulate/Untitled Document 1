@@ -1,0 +1,9 @@
+dataviews = dataset.fromJSON( {"images": 
+{"__87230964fc48ca55": ["data/__87230964fc48ca55_0.png"]}, "data": 
+{"__87230964fc48ca55": {"name": "__87230964fc48ca55", "min": 
+-2.128742146492004, "max": 3.3016803741455076, "raw": false, "shape": 
+[182, 218, 182], "mosaic": [15, 11], "subject": "MNI"}}, "views": 
+[{"xfm": [[-1.0, 0.0, 0.0, 90.0, 0.0, 1.0, 0.0, 126.0, 0.0, 0.0, 1.0, 
+72.0, 0.0, 0.0, 0.0, 1.0]], "name": "contrast", "vmin": [-2], "state": 
+null, "cmap": ["RdBu_r"], "attrs": {"priority": 1}, "vmax": [2], "data":
+ ["__87230964fc48ca55"], "desc": ""}]}  )

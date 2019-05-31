@@ -1,0 +1,65 @@
+{
+  "KRNS": {
+    "authors": [""],
+    "DOI": "",
+    "title": "",
+    "coordinate_space": "",
+    "contrasts": {
+      "dog_baseline": {
+        "condition1" : ["dog"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "dog_cat": {
+        "condition1" : ["dog"],
+        "condition2" : ["cat"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "numbers_basline": {
+        "condition1" : ["numbers"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "numbers_time": {
+        "condition1" : ["numbers"],
+        "condition2" : ["time"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      }    
+      },
+    "stimuli": {
+      "dog": {
+        "type": "word_list",
+        "value": "dog"
+      },
+      "cat": {
+        "type": "word_list",
+        "value": "cat"
+      },
+      "numbers": {
+        "type": "word_list",
+        "value": "one two three four five six seven eight nine ten twenty thirty forty fifty sixty seventy eighty ninety"
+      },
+      "time": {
+        "type": "word_list",
+        "value": "minute hour day week month year"
+      },                                                 
+      "baseline": {
+        "type": "word_list",
+        "value": "#####"
+      }
+    }
+  }
+}
+

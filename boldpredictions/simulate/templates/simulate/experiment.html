@@ -1,0 +1,25 @@
+
+{% extends 'simulate/base.html' %}
+
+{% block content %}
+<body>
+
+<br>
+<h4> <a href="experiment_list.html"> <span class="glyphicon glyphicon-chevron-left"> </span> </a> {{ title | safe  }} </h4>
+
+<h5>{{authors|safe}}</h5>
+
+<h5>{{DOI|safe}}</h5>
+
+<!--<h1>Experiments</h1>-->
+<ul>
+<!--<tbody>-->
+    <!--{% for message in txt %}-->
+    <!--{{ txt | safe  }}-->
+    <!--{% endfor %}-->
+<!--</tbody>-->
+    {{ txt | safe  }}
+</ul>
+
+</body>
+{% endblock %}

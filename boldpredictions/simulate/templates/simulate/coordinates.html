@@ -1,0 +1,40 @@
+{% extends 'simulate/base.html' %}
+
+{% block content %}
+<body>
+
+<div class="col-sm-8">
+<img src={{image}} style="width: 100%">
+
+</div>
+
+<div class="col-sm-4">
+        <br>
+        <br>
+        <br>
+    <h3> <a href = 'roi_filler.html?c_id={{c_id}}' > New analysis </a> </h3>
+
+    <h3> Existing analyses: </h3>
+
+        <iframe id = "iframe_pos_3" width = 90% height = 40% src = 'existing_roi_analyses.html?c_id={{c_id}}' frameBorder="0"></iframe>
+
+
+    </div>
+
+<br>
+
+<br>
+
+
+<!--<h1>Experiments</h1>-->
+<ul>
+<!--<tbody>-->
+    <!--{% for message in txt %}-->
+    <!--{{ txt | safe  }}-->
+    <!--{% endfor %}-->
+<!--</tbody>-->
+    {{ txt | safe  }}
+</ul>
+
+</body>
+{% endblock %}

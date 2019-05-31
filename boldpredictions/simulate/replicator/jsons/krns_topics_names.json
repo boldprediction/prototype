@@ -1,0 +1,784 @@
+{
+  "KRNS": {
+    "authors": [""],
+    "DOI": "",
+    "title": "",
+    "coordinate_space": "",
+    "contrasts": {
+      "contrast_01": {
+        "condition1" : ["astronomy_and_space_science_1","astronomy_and_space_science_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_02": {
+        "condition1" : ["mechanical_engineering_of_robots_1","mechanical_engineering_of_robots_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_03": {
+        "condition1" : ["ecology_1","ecology_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_04": {
+        "condition1" : ["genetic_engineering_1","genetic_engineering_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_05": {
+        "condition1" : ["heart_and_vascular_diseases_1","heart_and_vascular_diseases_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_06": {
+        "condition1" : ["tumors_oncology_cancer_1","tumors_oncology_cancer_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_07": {
+        "condition1" : ["politics_1","politics_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_08": {
+        "condition1" : ["law_1","law_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_09": {
+        "condition1" : ["economy_1","economy_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_10": {
+        "condition1" : ["tennis_1","tennis_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_11": {
+        "condition1" : ["photography_1","photography_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_12": {
+        "condition1" : ["music_1","music_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_13": {
+        "condition1" : ["acoustics_1","acoustics_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_14": {
+        "condition1" : ["climate_1","climate_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_15": {
+        "condition1" : ["education_1","education_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_16": {
+        "condition1" : ["electronics_1","electronics_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_17": {
+        "condition1" : ["hiking_camping_1","hiking_camping_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_18": {
+        "condition1" : ["hospital_1","hospital_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_19": {
+        "condition1" : ["intellectual_property_1","intellectual_property_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_20": {
+        "condition1" : ["military_operations_1","military_operations_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_21": {
+        "condition1" : ["nutrition_1","nutrition_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_22": {
+        "condition1" : ["skating_1","skating_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_23": {
+        "condition1" : ["statistics_1","statistics_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_24": {
+        "condition1" : ["television_1","television_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_25": {
+        "condition1" : ["livestock_1","livestock_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_26": {
+        "condition1" : ["pets_1","pets_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_27": {
+        "condition1" : ["baking_1","baking_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_28": {
+        "condition1" : ["timekeepers_1","timekeepers_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_29": {
+        "condition1" : ["royalty_1","royalty_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_30": {
+        "condition1" : ["wheelchairs_1","wheelchairs_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_31": {
+        "condition1" : ["mediaeval_times_1","mediaeval_times_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_32": {
+        "condition1" : ["fever_1","fever_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_33": {
+        "condition1" : ["tobacco_1","tobacco_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_34": {
+        "condition1" : ["polar_bears_1","polar_bears_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_35": {
+        "condition1" : ["weddings_1","weddings_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_36": {
+        "condition1" : ["eagles_1","eagles_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_37": {
+        "condition1" : ["mental_disorders_1","mental_disorders_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_38": {
+        "condition1" : ["dinosaurs_1","dinosaurs_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_39": {
+        "condition1" : ["beverages_1","beverages_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_40": {
+        "condition1" : ["artificial_intelligence_1","artificial_intelligence_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_41": {
+        "condition1" : ["tourism_1","tourism_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_42": {
+        "condition1" : ["dreams_1","dreams_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_43": {
+        "condition1" : ["bacteria_1","bacteria_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_44": {
+        "condition1" : ["email_1","email_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_45": {
+        "condition1" : ["theft_1","theft_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_46": {
+        "condition1" : ["publicity_advertising_1","publicity_advertising_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_47": {
+        "condition1" : ["portable_phones_mobile_phones_1","portable_phones_mobile_phones_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      },
+      "contrast_48": {
+        "condition1" : ["poverty_1","poverty_2"],
+        "condition2" : ["baseline"],
+        "coordinates": [ {"name": "",
+                         "xyz": [],
+                         "zscore": []}],
+        "figures": [""]
+      }
+    },
+    "stimuli": {
+      "astronomy_and_space_science_1": {
+        "type": "word_list",
+        "value": "The science of astronomy studies objects and systems in space. Astronomers observe planets and other objects using telescopes in observatories. They have recently discovered new asteroids and comets near Mars."
+      },
+      "astronomy_and_space_science_2": {
+        "type": "word_list",
+        "value": "A NASA astronaut is about to embark on a year-long space mission. The astronaut is going to test his endurance in a micro-gravity environment. The data will be valuable for planning a future space expedition to Mars."
+      },
+      "mechanical_engineering_of_robots_1": {
+        "type": "word_list",
+        "value": "A new robotics company recently unveiled its newest artificial animal robot. Spot, a four-legged robotic dog, can climb stairs and trot over rough terrain. Spot is electrically powered and moves using a system of hydraulic pumps and valves."
+      },
+      "mechanical_engineering_of_robots_2": {
+        "type": "word_list",
+        "value": "TOPIO is a bipedal humanoid robot designed to play table tennis against a human being. This robot is battery powered and has a hydraulic motor. TOPIO also has an advanced artificial intelligence system to learn new strategies."
+      },
+      "ecology_1": {
+        "type": "word_list",
+        "value": "Ecology studies the interactions between organisms and their environment. These interactions usually happen in an ecosystem, a community of living organisms in their environment. One example of an ecosystem is the set of plants in a rain forest that thrive on the rainfall. Differences in various types of ecosystems create unique environments that shape biodiversity."
+      },
+      "ecology_2": {
+        "type": "word_list",
+        "value": "A food web, or chain of consumption, is a well-known ecological network. Plants capture solar energy through photosynthesis and are eaten by herbivores. Herbivores are then eaten by carnivores. In this way, the energy of the food web is transferred, all the way up to carnivores."
+      },
+      "genetic_engineering_1": {
+        "type": "word_list",
+        "value": "Genetic engineering is the direct manipulation of an organism's genome using biotechnology. New DNA sequences may be obtained by biotechnologies, such as cloning or DNA synthesizing. These sequences can then be inserted into a host genome."
+      },
+      "genetic_engineering_2": {
+        "type": "word_list",
+        "value": "A genetically modified organism (GMO) is any organism whose genetic material has been altered using genetic engineering techniques. GMOs are used in biotechnology research, gene therapy, and agriculture. For example, genetically engineered crops are used in agriculture because of their modified traits, such as resistance to pests and herbicides."
+      },   
+      "heart_and_vascular_diseases_1": {
+        "type": "word_list",
+        "value": "Cardiovascular disease is a class of diseases that involves the heart or blood vessels. One common kind of cardiovascular disease results in a deficiency of the blood supply. It may be caused by high blood pressure, obesity, high blood cholesterol, smoking and other life-style factors."
+      },
+      "heart_and_vascular_diseases_2": {
+        "type": "word_list",
+        "value": "Diet is very predictive of cardiovascular risk. High dietary intakes of saturated fat and salt increase the overall risk of developing cardiovascular diseases. Intakes of vegetables and fruits may have a beneficial effect on disease outcomes."
+      },
+      "tumors_oncology_cancer_1": {
+        "type": "word_list",
+        "value": "Cancer, also known as a malignant tumor, is a group of diseases involving abnormal cell growth. Not all tumors are cancerous. Benign tumors do not spread to other parts of the body. A cancer mass has the potential to invade or spread."
+      },
+      "tumors_oncology_cancer_2": {
+        "type": "word_list",
+        "value": "Radiation therapy is the use of ionizing radiation to kill cancer cells and shrink tumors. The effects of radiation therapy are localized and confined to the irradiated region. Although radiation damages both cancer and normal cells, most normal cells can recover."
+      },
+      "politics_1": {
+        "type": "word_list",
+        "value": "Politics is the practice of obtaining and governing from a government position by considering the wishes of voters. Politicians are generally members of a political party, and run election campaigns to win an office. Campaigns try to increase support for a candidate among voters before an election."
+      },
+      "politics_2": {
+        "type": "word_list",
+        "value": "Political campaigns allow candidates to convey their platform positions and personality. One challenge of a political campaign is to show that a candidate understands voters’ concerns. Some voters prefer candidates who are bound by their own principles rather than by voter concerns. Other voters are more concerned with specific issues and how politicians will govern after they are elected."
+      },
+      "law_1": {
+        "type": "word_list",
+        "value": "Law is a system of rules created by governments. Legal matters are generally settled in courts by judges. If you break a law and are found guilty, you may have to pay a fine or go to prison."
+      },
+      "law_2": {
+        "type": "word_list",
+        "value": "The judiciary is a system of judges and courts that interpret and apply the law. The judiciary also provides a forum for resolving disputes. The judiciary generally does not make law or enforce law. The judiciary interprets the law and applies it to the facts of each legal case."
+      },  
+      "economy_1": {
+        "type": "word_list",
+        "value": "Economics is the science of the production, distribution and consumption of goods and services. Economics is often divided into microeconomics and macroeconomics. Microeconomics examines the behavior of basic elements in the economy, including individual companies and markets. Macroeconomics analyzes the entire economy, including production, consumption, savings, and investment, aggregated over all the elements."
+      },
+      "economy_2": {
+        "type": "word_list",
+        "value": "In an economy, inflation is a sustained increase in price. Inflation is the decreased percentage of goods and services each unit of currency can buy. The chief measure of inflation is the consumer price index. Inflation is also called the inflation rate, reflecting change in purchasing power in the economy."
+      },
+      "tennis_1": {
+        "type": "word_list",
+        "value": "In the sport of tennis, a volley is a shot returned to the opponent in mid-air before the ball bounces. A volley is generally performed near the net of the tennis court. It is usually made with a stiff-wristed punching motion to hit the ball into an open area of the opponent's court. The volley is one of eight basic shots in a tennis player’s repertoire."
+      },
+      "tennis_2": {
+        "type": "word_list",
+        "value": "In tennis, the first player to win at least four points (and at least two points more than their opponent) wins the game. Score calling is unique to the sport of tennis in that each point has a corresponding call that is synonymous with that point value. For example, zero points is called “love” and four points is called “game.” If each player or team in a game of tennis has three points, it’s called a “deuce.”"
+      },
+      "photography_1": {
+        "type": "word_list",
+        "value": "Photography is the art of creating images called photographs. Photographs are created when a camera records light either electronically with a sensor or chemically with film. Photography is used heavily in the media business, and is also often used for recreation."
+      },
+      "photography_2": {
+        "type": "word_list",
+        "value": "There is more to photography than choosing the right camera or lens. A photographer must make sure the subject is in focus, and that there is enough light. The photographer may also adjust the shutter speed for special situations."
+      },
+      "music_1": {
+        "type": "word_list",
+        "value": "Music is an art form that uses sound to create art. Music composers create melodies and harmonies by assembling notes of different pitches and durations. Musicians can also alter the timing or rhythm of notes to create differences in tempo, meter, and articulation. These elements can result in a wide variety of different music."
+      },
+      "music_2": {
+        "type": "word_list",
+        "value": "Musical improvisation is the creation of spontaneous music. Improvisation is a major part of some types of music, like blues and jazz, in which musicians compose melodies and harmonies as they perform them. Improvisation is a creative expression of emotions and instrumental technique, and can even be a response to other musicians."
+      },  
+      "acoustics_1": {
+        "type": "word_list",
+        "value": "In acoustics, an echo is a reflection of the original sound. Your ear cannot distinguish an echo from the original sound if the delay is short. Reverberation, on the other hand, is when you hear several repeated echoes of a sound."
+      },
+      "acoustics_2": {
+        "type": "word_list",
+        "value": "Acoustics is the study of how sound is transmitted, such as reverberation in an enclosed space. Acousticians’ research on sound in the middle ear led to the improvement of cochlear implants. A cochlear implant translates sounds into resonant vibrations within the ear. Then, the implant utilizes the vibration to stimulate the inner ear to create artificial hearing."
+      },
+      "climate_1": {
+        "type": "word_list",
+        "value": "The subtropics are geographic and weather zones located directly next to the tropic circles. The subtropics have an average temperature at or above 50 degrees Fahrenheit and a high level of precipitation. Subtropical climates result in regions that have moderate temperatures and humidity, like savannahs."
+      },
+      "climate_2": {
+        "type": "word_list",
+        "value": "Climate is the long-term pattern of weather in a particular area. It is measured by assessing patterns of average temperature, humidity, and precipitation. These variables interact to create environments like savannahs, lowlands, and grasslands."
+      },
+      "education_1": {
+        "type": "word_list",
+        "value": "The facilities of a college campus vary, but typically include some key buildings. Academic buildings like libraries and classroom halls are a necessity for education. Campuses also have residence halls for student rooms, as well as auditoriums and gymnasiums."
+      },
+      "education_2": {
+        "type": "word_list",
+        "value": "In higher education, tuition is the price of attending an academic institution. Tuition amount often depends on the facilities offered by the college. A part of the tuition pays for the cost of maintaining classrooms, libraries, auditoriums, and gymnasiums. For students living on campus, tuition might include the cost of their residence hall room."
+      },
+      "electronics_1": {
+        "type": "word_list",
+        "value": "Electronic circuits can include resistors and transistors, connected by conductive wires. The resistors restrict the current in the circuit. The transistors amplify and switch electronic signals. The wires carry the current that drives the electronic circuit."
+      },
+      "electronics_2": {
+        "type": "word_list",
+        "value": "Everyday electronic devices rely on integrated circuits. The process of creating integrated circuits is called semiconductor fabrication. Silicon is almost always used as the semiconducting material. It is important for the silicon to be pure for fabrication."
+      },  
+      "hiking_camping_1": {
+        "type": "word_list",
+        "value": "National parks are popular camping destinations. There are mountains and forests for hiking and rivers and lakes for fishing. Most parks also have trails, campgrounds, and picnic areas for campers."
+      },
+      "hiking_camping_2": {
+        "type": "word_list",
+        "value": "Hiking can require different equipment depending on the duration and location of the hike. Hiking trails near lakes and rivers call for fishing supplies. For hikers who spend the night in the forest, on a mountain or by a lake, camping equipment is necessary. Those enjoying a short hike through the park sometimes bring food for a picnic."
+      },
+      "hospital_1": {
+        "type": "word_list",
+        "value": "Hospitals house many different medical professionals. Doctors, nurses, and surgeons collaborate to generate diagnoses, treatments, and preventive measures. All of these medical professionals contribute to providing the best healthcare practice."
+      },
+      "hospital_2": {
+        "type": "word_list",
+        "value": "Healthcare concerns the diagnosis, treatment, and prevention of medical impairments. The most common healthcare workers in hospitals are nurses and doctors. More serious procedures may require a surgeon. Family doctors sometimes practice out of smaller clinics."
+      },
+      "intellectual_property_1": {
+        "type": "word_list",
+        "value": "Common types of intellectual property rights include copyrights, patents, and trademarks. Copyrights are mainly for books and music recordings, giving authors the distribution rights for a limited time. Patents protect the use of inventions or technological improvements. A trademark protects the use of a logo or design."
+      },
+      "intellectual_property_2": {
+        "type": "word_list",
+        "value": "A royalty is a payment made to the owner of intellectual property as specified by a licensing agreement. The licensee can make a profit from using the intellectual property. The licensor receives a percentage of the profit, called the royalty. Violation of the licensing agreement is called an infringement."
+      },  
+      "military_operations_1": {
+        "type": "word_list",
+        "value": "The military supports the interests of the country and its civilians. Generally a military’s main task is the defense of the state. The military requires specialized training, equipment, and supplies for effective operation."
+      },
+      "military_operations_2": {
+        "type": "word_list",
+        "value": "In the United States military, the National Guard acts as a reserve force. The president can deploy the National Guard for any operational mission. The deployment of this reserve force can help support the defense of the state."
+      },
+      "nutrition_1": {
+        "type": "word_list",
+        "value": "Nutrition is the study of nutrients in food in relation to health. Maintaining a nutritious diet may help to control healthy weight. Some diets limit the consumption of sugar and fat. Other diets revolve around obtaining essential vitamins."
+      },
+      "nutrition_2": {
+        "type": "word_list",
+        "value": "A lack of physical activity and excess food intake are thought to cause obesity. Diets high in fats and sugars and low in vitamins may result in weight gain. Conversely, a diet consisting of more nutritious food may prevent obesity."
+      },
+      "skating_1": {
+        "type": "word_list",
+        "value": "Humans have a long history of skating, using blades to glide over ice. The skate blades for figure skating are designed for jumping and spinning. The blades for speed skating, on the other hand, require a larger rear part of the blade for acceleration."
+      },
+      "skating_2": {
+        "type": "word_list",
+        "value": "Figure skating is a highly competitive sport, for individuals, pairs or groups. The jumps skaters use include toe jumps and edge jumps. The spins have a lot of varieties, such as camel spin and sit spin. For the pair competitions, skaters perform dance lifts as well."
+      },
+      "statistics_1": {
+        "type": "word_list",
+        "value": "Statistics uses data in a small sample to infer a population distribution. Statisticians make probabilistic inferences about the population, based on the sample that is analyzed. The probabilistic inferences take random variation or noise in the data into consideration."
+      },
+      "statistics_2": {
+        "type": "word_list",
+        "value": "The methodology of statistics is based on probabilistic hypothesis testing. A hypothesis is a prediction about how one variable will affect another variable. The distributions of these variables are then measured along with some random noise. The data are analyzed to determine whether the prediction is correct, beyond mere randomness."
+      },  
+      "television_1": {
+        "type": "word_list",
+        "value": "The first episode of a television show is called a pilot. The success of the pilot episode determines if the show will continue to be produced. A show’s success is affected by when it is aired, the cast, and the writing."
+      },
+      "television_2": {
+        "type": "word_list",
+        "value": "Television shows can vary greatly in the number of episodes produced. Some shows, such as certain news broadcasts have been airing for decades. Other shows, like a mini-series, have a limited number of episodes."
+      },
+      "livestock_1": {
+        "type": "word_list",
+        "value": "Livestock are domesticated animals, such as chickens or cattle which are raised in an agricultural setting. They can be raised on a free range or farm. They are raised to produce meat, dairy, or other materials. The agricultural community debates whether it is better to raise livestock on a free range or in an enclosed farm."
+      },
+      "livestock_2": {
+        "type": "word_list",
+        "value": "Livestock are generally raised in enclosures on farms to produce meat, dairy, or other agricultural products. Previously, livestock, such as longhorn cattle, were raised in more free range ways. For moral reasons, the agricultural community has begun to raise livestock on free ranges again. Meat and dairy from livestock raised on a free range is supposedly higher quality."
+      },
+      "pets_1": {
+        "type": "word_list",
+        "value": "A pet is an animal kept for companionship, service, or protection with the most popular pets being cats and dogs. However, other cute animals such as hamsters or ferrets can also be pets. Some pet owners train their cats or dogs to perform cute tricks. Pet owners sometimes upload videos of their pets performing cute behaviors to the internet."
+      },
+      "pets_2": {
+        "type": "word_list",
+        "value": "Some pets are not only cute companions, but can also be trained as service animals. For example, dogs can be trained to guide blind owners and cats can be trained to aid owners with anxiety. Some dogs become trained companions for police officers to sniff out drugs. Service animals are permitted into locations were pets normally are not allowed."
+      },  
+      "baking_1": {
+        "type": "word_list",
+        "value": "The first step of baking is to prepare batter. Batter is made by combining ingredients like flour, eggs, water, and oil. Then it is placed in an oven where it is exposed to dry heat.  This heat causes batter to rise, resulting in many different baked goods like pastries, bread, and many others."
+      },
+      "baking_2": {
+        "type": "word_list",
+        "value": "The use of dry heat and other techniques for baking bread has become industrialized. Large bakeries process raw ingredients to ensure the contents of their batter. Additionally, bakers employ automated machinery to produce baked goods, instead of simple ovens.  These modern methods of baking result in breads and pastries with accurate amounts of ingredients."
+      },
+      "timekeepers_1": {
+        "type": "word_list",
+        "value": "The timekeeping element in clocks is called a harmonic oscillator. An oscillator keeps time by vibrating at a constant number of cycles per second or frequency. These oscillators include pendulums, quartz crystals, or even the vibration of electrons in an atom.  Maintaining their frequency is critical for the accurate of timekeeping."
+      },
+      "timekeepers_2": {
+        "type": "word_list",
+        "value": "Some clocks rely on external oscillators for consistent cycles of oscillation. These clocks, also known as slave clocks, are automatically synchronized to more accurate clocks. Computer real time clocks, for example, use a quartz crystal but are also synchronized with atomic clocks. Atomic clocks are the most accurate of timekeeping devices."
+      },
+      "royalty_1": {
+        "type": "word_list",
+        "value": "The king or queen who rules in a monarchy is considered a monarch. A royal family refers to all family members of this monarch. Sons and daughters of kings and queens are referred to as princes and princesses.  Children of princes and princesses are considered to have royal blood and therefore are also entitled to rule."
+      },
+      "royalty_2": {
+        "type": "word_list",
+        "value": "In government ruled by a monarch, a king or queen of a royal family rules for an extended period of time. When princes and princesses are born, a family line is created.  This family line, including princes, princesses, and other immediate family, becomes known as a dynasty or royal house.  Dynasties may also refer to the historical periods when a royal family ruled."
+      },
+      "wheelchairs_1": {
+        "type": "word_list",
+        "value": "A wheelchair is a chair fitted with wheels for the purpose of transportation. People using a wheelchair might require one for mobility because of an injury or permanent handicap.  Rails on the wheels of wheelchairs allow for manual propulsion.  Electrical power can also allow users to drive wheelchairs using different controllers specialized for different handicaps."
+      },
+      "wheelchairs_2": {
+        "type": "word_list",
+        "value": "In the past, wheelchairs required their occupants to manually propel them. Recent models use electrical power for propulsion. Other variants involve wheelchairs suited for sport performance or that are specialized to a person’s injury, handicap, or specific mobility need.  Producers continue to optimize wheelchair transportation to provide mobility for those suffering a handicap."
+      },  
+      "mediaeval_times_1": {
+        "type": "word_list",
+        "value": "During the middle ages, the clergy had a large amount of religious influence over European kingdoms. Gothic cathedrals replaced smaller monasteries as sources of religious art and education. Cathedrals would also train clergy members to fight to become knights.  Individuals who pledged themselves to the church often rose to a higher social class in the kingdom."
+      },
+      "mediaeval_times_2": {
+        "type": "word_list",
+        "value": "During the middle ages, kingdoms fought wars for religious reasons. In Europe, clergy members could train to become knights at cathedrals. Once trained, knights marched to war for their church and their kingdom.   These wars caused religious ideas to spread beyond the borders of Europe leading to the creation of new cathedrals."
+      },
+      "fever_1": {
+        "type": "word_list",
+        "value": "A fever is an increase in the body’s temperature caused by illness. Sometimes fevers, measured using thermometers, cause temperatures to increase to dangerous levels requiring medical treatment. In these cases, ice baths are used as treatment to lower body heat. If medical aid is not received, the heat from the fever can cause severe damage."
+      },
+      "fever_2": {
+        "type": "word_list",
+        "value": "Heat given off by a fever can be measured using a thermometer. The severity of an illness and corresponding treatment is informed by the measurement of temperature from the thermometer. A sudden increase in body temperature implies a worsening of an illness. Because fevers sometimes indicate contagious illnesses, temperature should be monitored by medical practitioners until body temperature stabilizes."
+      },
+      "tobacco_1": {
+        "type": "word_list",
+        "value": "Tobacco contains an addictive substance called nicotine. When a person smokes they risk becoming addicted to nicotine and begin to feel cravings if they don’t continue to smoke. If cravings are not satisfied, the smoker may experience withdrawal symptoms such as headaches or anxiety. After the smoker abstains for enough time, withdrawal symptoms begin to fade."
+      },
+      "tobacco_2": {
+        "type": "word_list",
+        "value": "Smoking tobacco involves inhaling dangerous carcinogens. These carcinogens motivate many to quit smoking cigarettes although the addiction is often hard to overcome.  Nicotine patches mirror some of the effects of cigarettes and curb cravings. Nicotine patches are often used to wean people from their addiction and help them quit smoking and avoid inhaling carcinogens."
+      },  
+      "polar_bears_1": {
+        "type": "word_list",
+        "value": "Polar bears have thick fur to protect them from harsh arctic climates. Female polar bears use their sharp claws to dig caves in snowdrifts to give birth to their cubs. Newborn cubs are the size of cats, with small paws and short fur.  These helpless cubs depend on their mothers to navigate sea ice and hunt prey."
+      },
+      "polar_bears_2": {
+        "type": "word_list",
+        "value": "Polar bears have large paws equipped with sharp claws which help polar bears grip onto sea ice. The paws are webbed to help them hunt prey in water. Their fur is white to camouflage them as they approach prey in the arctic climate.  Polar bears have no natural predators but cubs still depend on their mothers for protection."
+      },
+      "weddings_1": {
+        "type": "word_list",
+        "value": "Weddings are ceremonies that involve the exchange of rings and the recitation of vows. Rings are worn by the married couple as symbols of their marital vows.  When a marriage is immediately unsuccessful, couples can choose to dissolve it with an annulment.  This process legally dissolves the marriage and frees the couple from their vows."
+      },
+      "weddings_2": {
+        "type": "word_list",
+        "value": "Marriages are often long and happy with couples even renewing their vows in a ceremony similar to a wedding. However, if a couple is no longer happy in their marriage, they might seek a divorce. Some couples attempt to avoid divorce through marriage counseling.  Marriage counseling helps both parties communicate problems occurring in their marriage."
+      },
+      "eagles_1": {
+        "type": "word_list",
+        "value": "Eagles can be distinguished from other birds by their large wings, curved beaks, and the few numbers of eggs they lay. The eagle’s feathers help their wings gain lift while hunting. Their strong talons allow eagles to lift heavy prey. In between hunts, eagles return to their nests where they incubate and protect their eggs."
+      },
+      "eagles_2": {
+        "type": "word_list",
+        "value": "Eagles do not have any natural enemies and are powerful predators. They use their beaks and strong talons to hunt and kill their prey. Eagles’ large wings and talons allow them to lift and drop prey from great heights.  The eagle then returns with the prey to their nests, often located on cliff faces."
+      },
+      "mental_disorders_1": {
+        "type": "word_list",
+        "value": "Mental disorders are illnesses that afflict a person’s mind, personality, and well-being and can result in abnormal behavior. Some individuals are genetically predisposed to be afflicted with anxious or depressed personalities. Having a mental disorder often stigmatizes the person as being abnormal. Coping with a mental illness is often a life-long struggle."
+      },
+      "mental_disorders_2": {
+        "type": "word_list",
+        "value": "Mental disorders, such as depressive and anxiety disorders, can be treated with either behavioral therapy or medication. Some mental illnesses afflict people for short periods of time while others require long-term coping and therapy. These long term mental disorders can result in abnormal personality characteristics.  Treatment reduces abnormal behavior while maximizing the well-being of the afflicted patient."
+      },    
+      "dinosaurs_1": {
+        "type": "word_list",
+        "value": "Modern paleontologists learn about dinosaurs through fossilized bones. Fossils of dinosaurs are the only explicit evidence that dinosaurs existed in prehistoric times. These fossils are stone casts of dinosaurs’ bone structures which illuminate prehistoric animal anatomy. Additionally, dinosaurs’ skeletons provide insight into the anatomy of ancient animals and also into prehistoric physical environments."
+      },
+      "dinosaurs_2": {
+        "type": "word_list",
+        "value": "Dinosaurs were animals varying in shape and size depending on the prehistoric environments they resided in. Their ancient fossilized skeletons provide insight into roles these animals held. For example, some of these animals had bird-like bone structures while other skeletons suggest that some of them lived in water. Some animals today still show skeletal evidence of originating from dinosaurs."
+      },  
+      "beverages_1": {
+        "type": "word_list",
+        "value": "Brewing water with tea leaves can be traced to ancient times. Since brewing beverages requires boiled water, it was often the most sanitary beverage to drink. Modern teas can be, roasted, fermented or mixed with sugar and milk depending on taste preference. Brewing and drinking tea often plays a social role because people enjoy drinking hot beverages in groups."
+      },
+      "beverages_2": {
+        "type": "word_list",
+        "value": "Some alcoholic beverages involve the mixing of various liquors, allowing them to be tailored to specific tastes. Unlike brewed beer, liquor is made by distilling fermented fruits or vegetables. Alcoholic beverages are typically drunk in social settings such as bars or parties. When drinking liquor or other alcohol, water should also be drunk to avoid a hangover."
+      },
+      "artificial_intelligence_1": {
+        "type": "word_list",
+        "value": "Search engines use computer algorithms that learn from patterns in data from previous searches. These algorithms make predictions about the user’s intent as the user types the search terms. This technology is increasingly efficient because of increases in computing strength. This computing capability increases access to data and enables algorithm programming."
+      },
+      "artificial_intelligence_2": {
+        "type": "word_list",
+        "value": "Modern technology and computers have been used to program cars to drive themselves. These programs are algorithms that learn from data which enables them to recognize patterns in the environment. These predicted patterns could be visual objects such as other vehicles or pedestrians. Algorithms developed for this technology can be programmed for other similar problems if enough data are available."
+      },
+      "tourism_1": {
+        "type": "word_list",
+        "value": "Traveling internationally is a great way to explore exotic places and sightsee attractions from other cultures. Some tourists vacation internationally to sightsee historical monuments from other cultures. Others travel to explore international cuisine and experience leisure in ways that locals would.  Of course, there are also people who just go to resort locations for leisure and relaxation."
+      },
+      "tourism_2": {
+        "type": "word_list",
+        "value": "Some vacationers choose to tour nearby locations instead of traveling internationally. There are many attractions such as museums and national parks to sightsee throughout the country. Traveling to some towns can offer quaint settings to explore and relax while other towns have resorts for leisure and activities. Many travelers underestimate the number of nearby attractions and interesting locations there are to explore."
+      },
+      "dreams_1": {
+        "type": "word_list",
+        "value": "Dreams occur during a stage of sleep called REM sleep (Rapid Eye Movement). During this REM stage of sleep, the unconscious mind can recreate scenes from memory, or scenes aroused by recent emotions.  Sometimes memories or emotions can lead to negative dreams.  These are referred to as nightmares, which can cause intense emotion by arousing a dreamer’s fears."
+      },
+      "dreams_2": {
+        "type": "word_list",
+        "value": "Nightmares are frightening dreams occurring during REM sleep which can follow periods of intense stress and emotion in a dreamer’s life. Although other types of dreams can elicit intense emotion during sleep, nightmares are particularly intense.  Some researchers believe nightmares result from suppressed memories in the unconscious mind.  These unpleasant unconscious memories can provide insight into a dreamer’s wakeful troubles."
+      },  
+      "bacteria_1": {
+        "type": "word_list",
+        "value": "Microorganisms live in either symbiotic or parasitic relationships with other living organisms. Certain bacteria form a symbiotic relationship with humans, contributing to the immune system and the process of digestion.  Other types of bacteria form a parasitic relationship in which microorganisms feed on larger organisms.  In both cases, microorganisms grow and multiply, creating colonies of bacteria living in many environments."
+      },
+      "bacteria_2": {
+        "type": "word_list",
+        "value": "Bacteria which form parasitic associations with other organisms are called pathogens. This form of relationship can cause diseases such as tetanus when bacteria create colonies within living organisms.  To fight these bacteria, anti-bacterial soap and antibiotic medication are often used.   Antibiotics in particular kill harmful microorganisms and prevent the growth of bacterial colonies."
+      },
+      "email_1": {
+        "type": "word_list",
+        "value": "The invention of email advanced computer technology by allowing communication over the internet. The first email was sent over a network connecting only two computers.  As email became more prevalent, advances like spam folders, multiple inboxes, and large attachment capabilities were developed. However, email’s popularity has led hackers to attempt to breach the security of computers."
+      },
+      "email_2": {
+        "type": "word_list",
+        "value": "The desire to communicate over the internet has advanced computer technology. Phones can now use networks to send emails over the internet. However, as internet communication becomes more prevalent, there is a greater risk of hackers breaching the security of network connections. These hackers use spam to breach your inbox, your attachments, and areas of your computer containing private information."
+      },
+      "theft_1": {
+        "type": "word_list",
+        "value": "Theft is the act of stealing another person’s property and punishable by the law. Historically, theft revolved around bank robbery, shoplifting, and other tangible crimes.  New technology has created a new type of criminal who steals cyber information from electronic devices.  Forensic analyses have evolved to electronic sleuthing so that police and the justice system can catch these cyber criminals."
+      },
+      "theft_2": {
+        "type": "word_list",
+        "value": "Identity theft is a common form of cyber crime. Theft of identity occurs when someone’s financial information is stolen and used by thieves. Police have new problems handling electronic forensic evidence as opposed to material evidence in crimes like robbery and shoplifting.  The justice system is adapting laws to handle cyber thieves as they switch from physical to electronic property theft."
+      },  
+      "publicity_advertising_1": {
+        "type": "word_list",
+        "value": "Advertising is designed to persuade consumers to purchase a product. Within the field of marketing, communication is key to increasing sales or supporting a brand.  Online commercials are by far the most prevalent marketing strategy used today.  As technology advances, consumers can expect new means of advertising and communication to be used."
+      },
+      "publicity_advertising_2": {
+        "type": "word_list",
+        "value": "Modern technology provides new ways of persuading consumers to purchase products. For instance, some software tracks sales for consumers and tailors advertisements to consumer preference.  Other means of increasing sales involve showing commercials on relevant channels ensuring brand names reach interested consumers.  As technology continues to diversify, marketers add to their methods of persuasion and communication."
+      },
+      "portable_phones_mobile_phones_1": {
+        "type": "word_list",
+        "value": "Communication among people experienced many advances with the invention of the cell phone. The cell phone was the first device to provide a means of wireless communication.  Later models incorporated text messaging and access to the internet through network connections.  Current smart phones allow access to hundreds of applications from GPS to social network applications."
+      },
+      "portable_phones_mobile_phones_2": {
+        "type": "word_list",
+        "value": "Smart phones are the forefront of communication technology. These devices, while providing cell phone and text messaging services, also come equipped with hundreds of applications. Applications such as GPS allow you to locate your cell phone and provide information for social networking applications. The ability to access networks wirelessly allows people to share their experiences continents away."
+      },
+      "poverty_1": {
+        "type": "word_list",
+        "value": "Inequality caused by economic disparity and access to healthcare services has recently declined internationally. The reduction in poverty reflects increased educational funding and healthcare availability. The increased money was targeted at education of children and parents in impoverished areas.   These improvements to the education and healthcare systems reduce disparity in incomes in impoverished populations."
+      },
+      "poverty_2": {
+        "type": "word_list",
+        "value": "Historically, poverty has been an issue of disparity in healthcare and education in a population. Economic disparity occurs when money limits a child’s access to education. This lack of early education limits access to high-income occupations and escape from poverty. Furthermore, lack of healthcare services increases the incidence of illnesses of a population, creating greater disparity between income levels."
+      },                                                       
+      "baseline": {
+        "type": "word_list",
+        "value": "#####"
+      }
+    }
+  }
+}

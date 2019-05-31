@@ -1,0 +1,272 @@
+
+{% extends 'simulate/base.html' %}
+
+{% block content %}
+
+<body>
+
+<div class="row">
+
+
+<div class="col-sm-12">
+    <div class="col-sm-6">
+    <center>  <h1> <a href="/"> <span class="glyphicon glyphicon-chevron-left"> </span> </a>  {{list1_name}} - {{list2_name}}</h1> </center>
+
+    <div class="col-sm-6">
+    <h3>{{list1_name}}</h3>
+    <p  .pre-scrollable>{{list1}}</p>
+    </div>
+    <div class="col-sm-6">
+    <h3>{{list2_name}}</h3>
+    <p  .pre-scrollable >{{list2}}</p>
+    </div>
+
+    </div>
+   <div class="col-sm-6">
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+    <button type = 'button' class ="btn btn-danger btn-inverse" id = "first_group">Subjects 1-4</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-danger" id = "second_group">Subjects 5-8</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-danger" id = "no_group">Close all subjects</button>
+        &nbsp;
+        <br>
+          <br>
+    <br>
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "fiducial" style="visibility:hidden">Fiducial View</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "inflated" style="visibility:hidden">Inflated View</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "flatten" style="visibility:hidden">Flat</button>
+            &nbsp;
+ 
+
+    <div id='roi_labels' style="visibility:hidden">
+    <input type="checkbox" aria-label="..." id = "labels_checkbox"  checked="unchecked">
+    <label for="labels_checkbox">Show ROI labels</label>
+    </div>
+
+
+        </p>
+        <p><br></p>
+
+
+
+        </div>
+
+    <p>   </p>
+
+
+         </div>
+    </div>
+
+
+    <div class="col-sm-6">
+    <center>
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "lateral_left" >Lateral Left</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "lateral_right" >Lateral Right</button>
+        &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "top_view" >Top</button>
+            &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "bottom_view" >Bottom</button>
+            &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "front_view" >Front</button>
+            &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "back_view" >Back</button>
+            &nbsp;
+    <button type = 'button' class ="btn btn-primary btn-sm" id = "pmap" >Toggle Pmap</button>
+            &nbsp;
+        </center>
+    <iframe id="mni_iframe" height=55% width="100%" src="MNI.html?c_id={{c_id}}" frameBorder="0">
+    </iframe>
+    </div>
+
+
+{% if exp_id %}
+    <div class="col-sm-6">
+
+        <iframe id="pub_contrast" height=100% width="100%" src="published_contrast_view.html?c_id={{c_id}}" frameBorder="0">
+     </iframe>
+        </div>
+ {% endif %}
+
+
+    <div class="col-sm-6">
+
+
+
+    <div class = "subject_container">
+        </div>
+    <div class="col-sm-6" id="iframe_pos_1_name">  </div>
+    <div class="col-sm-6" id="iframe_pos_2_name">  </div>
+
+    <div class="col-sm-6">  <iframe id = "iframe_pos_1" width = 100% height = 40% src = '' frameBorder="0"></iframe> </div>
+    <div class="col-sm-6"><iframe id = "iframe_pos_2" width = 100% height = 40% src = '' frameBorder="0"></iframe></div>
+    <div class="col-sm-6" id="iframe_pos_3_name">  </div>
+    <div class="col-sm-6" id="iframe_pos_4_name">  </div>
+    <div class="col-sm-6"><iframe id = "iframe_pos_3" width = 100% height = 40% src = '' frameBorder="0"></iframe></div>
+    <div class="col-sm-6"><iframe id = "iframe_pos_4" width = 100% height = 40% src = '' frameBorder="0"></iframe></div>
+
+    </div>
+
+
+ <div class="col-sm-6"><iframe id = "roi_fill" width = 100% height = 40% src = "roi_filler.html?c_id={{c_id}}" frameBorder="0"></iframe></div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#first_group").click(function(){
+    $("#roi_labels").attr('style',"visibility:visible");
+    $("#fiducial").attr('style',"visibility:visible");
+    $("#inflated").attr('style',"visibility:visible");
+    $("#flatten").attr('style',"visibility:visible");
+    document.getElementById("labels_checkbox").checked = true;
+    document.getElementById("iframe_pos_1_name").innerHTML="<h4> <center> Subject 1 <a target=_blank href=subj1.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a> </center> </h4>"
+    $("#iframe_pos_1").attr("src", "subj1.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_2_name").innerHTML="<h4> <center> Subject 2 <a target=_blank href=subj2.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center> </h4>"
+    $("#iframe_pos_2").attr("src", "subj2.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_3_name").innerHTML="<h4>  <center> Subject 3 <a target=_blank href=subj3.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center></h4>"
+    $("#iframe_pos_3").attr("src", "subj3.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_4_name").innerHTML="<h4> <center> Subject 4 <a target=_blank href=subj4.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center> </h4>"
+    $("#iframe_pos_4").attr("src", "subj4.html?c_id={{c_id}}");
+    $('iframe').contents().find('#roislabelshow').trigger( "click" );
+});
+$("#second_group").click(function(){
+    $("#roi_labels").attr('style',"visibility:visible");
+    $("#fiducial").attr('style',"visibility:visible");
+    $("#inflated").attr('style',"visibility:visible");
+    $("#flatten").attr('style',"visibility:visible");
+    document.getElementById("labels_checkbox").checked = true;
+    document.getElementById("iframe_pos_1_name").innerHTML="<h4> <center> Subject 5 <a target=_blank href=subj5.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a> </center> </h4>"
+    $("#iframe_pos_1").attr("src", "subj5.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_2_name").innerHTML="<h4> <center> Subject 6 <a target=_blank href=subj6.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center> </h4>"
+    $("#iframe_pos_2").attr("src", "subj6.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_3_name").innerHTML="<h4>  <center> Subject 7 <a target=_blank href=subj7.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center></h4>"
+    $("#iframe_pos_3").attr("src", "subj7.html?c_id={{c_id}}");
+    document.getElementById("iframe_pos_4_name").innerHTML="<h4> <center> Subject 8 <a target=_blank href=subj8.html?c_id={{c_id}}><span class=\"glyphicon glyphicon-new-window\"></span></a></center> </h4>"
+    $("#iframe_pos_4").attr("src", "subj8.html?c_id={{c_id}}");
+    $('iframe').contents().find('#roislabelshow').trigger( "click" );
+    });
+$("#no_group").click(function(){
+    $("#roi_labels").attr('style',"visibility:hidden");
+    $("#fiducial").attr('style',"visibility:hidden");
+    $("#inflated").attr('style',"visibility:hidden");
+    $("#flatten").attr('style',"visibility:hidden");
+    document.getElementById("labels_checkbox").checked = false;
+    document.getElementById("iframe_pos_1_name").innerHTML="<h4>  </h4>"
+    $("#iframe_pos_1").attr("src", "");
+    document.getElementById("iframe_pos_2_name").innerHTML="<h4>  </h4>"
+    $("#iframe_pos_2").attr("src", "");
+    document.getElementById("iframe_pos_3_name").innerHTML="<h4>  </h4>"
+    $("#iframe_pos_3").attr("src", "");
+    document.getElementById("iframe_pos_4_name").innerHTML="<h4>  </h4>"
+    $("#iframe_pos_4").attr("src", "");
+    });
+$("#fiducial").click(function(){
+   $('iframe').contents().find('#fiiducial_button').trigger( "click" );
+    });
+$("#inflated").click(function(){
+   $('iframe').contents().find('#Inflated_button').trigger( "click" );
+    });
+$("#flatten").click(function(){
+   $('iframe').contents().find('#flat_button').trigger( "click" );
+    });
+$("#labels_checkbox").click(function(){
+   $('iframe').contents().find('#roislabelshow').trigger( "click" );
+    });
+var anim_time = 0.75; // time in seconds for animation
+$("#lateral_left").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:91},
+                                  {idx:anim_time, state:'altitude', value:91},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+        <!--$(iframes[i]).contents().find('#Inflated_button').trigger( "click" );-->
+    }
+});
+$("#lateral_right").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:271},
+                                  {idx:anim_time, state:'altitude', value:91},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+        <!--$(iframes[i]).contents().find('#Inflated_button').trigger( "click" );-->
+    }
+});
+
+$("#top_view").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:91},
+                                  {idx:anim_time, state:'altitude', value:1},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+    }
+});
+
+$("#bottom_view").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:91},
+                                  {idx:anim_time, state:'altitude', value:181},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+    }
+});
+$("#front_view").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:1},
+                                  {idx:anim_time, state:'altitude', value:91},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+    }
+});
+
+$("#back_view").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:181},
+                                  {idx:anim_time, state:'altitude', value:91},
+                                  {idx:anim_time, state:'radius', value:300},
+                                  {idx:anim_time, state:'mix', value:0}]);
+    }
+});
+$("#flat").click(function(){
+    var iframes = $('iframe');
+    var radii = [250, 315, 315, 315, 315];
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].animate([{idx:anim_time, state:'azimuth', value:90},
+                                  {idx:anim_time, state:'altitude', value:90},
+                                  {idx:anim_time, state:'radius', value:radii[i]},
+                                  {idx:anim_time, state:'mix', value:1.0}]);
+    }
+});
+$("#pmap").click(function(){
+    var iframes = $('iframe');
+    for (i=0; i<iframes.length; i++) {
+        v = $(iframes[i]).contents()[0].viewers;
+        v[v.subjects[0]].nextData(1);
+    }
+});
+});
+</script>
+
+{% endblock %}
+

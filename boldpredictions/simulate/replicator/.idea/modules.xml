@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/DN/.idea/DN.iml" filepath="$USER_HOME$/DN/.idea/DN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/code.iml" filepath="$PROJECT_DIR$/.idea/code.iml" />
+      <module fileurl="file://$USER_HOME$/communication/.idea/communication.iml" filepath="$USER_HOME$/communication/.idea/communication.iml" />
+      <module fileurl="file://$USER_HOME$/DN/convolutional_autoencoder/.idea/convolutional_autoencoder.iml" filepath="$USER_HOME$/DN/convolutional_autoencoder/.idea/convolutional_autoencoder.iml" />
+      <module fileurl="file://$USER_HOME$/generative_brain/.idea/generative_brain.iml" filepath="$USER_HOME$/generative_brain/.idea/generative_brain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../qa/notebooks/.idea/notebooks.iml" filepath="$PROJECT_DIR$/../../qa/notebooks/.idea/notebooks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pycortex/.idea/pycortex.iml" filepath="$PROJECT_DIR$/../../pycortex/.idea/pycortex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../qa/.idea/qa.iml" filepath="$PROJECT_DIR$/../../qa/.idea/qa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/replication.iml" filepath="$PROJECT_DIR$/../.idea/replication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../stimulus_presentation/stimulus_presentation/.idea/stimulus_presentation.iml" filepath="$PROJECT_DIR$/../../stimulus_presentation/stimulus_presentation/.idea/stimulus_presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../keyboard/take2/.idea/take2.iml" filepath="$PROJECT_DIR$/../../keyboard/take2/.idea/take2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../k8/leila/text/.idea/text.iml" filepath="$PROJECT_DIR$/../../../../../k8/leila/text/.idea/text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../qa/visqa/.idea/visqa.iml" filepath="$PROJECT_DIR$/../../qa/visqa/.idea/visqa.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,261 @@
+
+{% extends 'simulate/base.html' %}
+
+
+
+{% block content %}
+
+<style type="text/css">
+    .btn {width:33%;
+          border-radius: 0px;}
+</style>
+
+
+<body>
+
+<div style="position:fixed;
+            z-index: 2; /* above everything else */
+            top:0; left:0; bottom:0; right:0;
+            background:rgba(0,0,0,.5);
+             display:none;
+" id = 'blackout'> <!-- possibly some loading-animation and/or explanation --> </div>
+
+<div class="col-sm-1">
+    </div>
+<div class="col-sm-4">
+
+    <h1>New contrast</h1>
+    <br>
+    <br>
+    <form method="POST" class="form-horizontal">{% csrf_token %}
+        {{ form.as_p2 }}
+        <button type="submit" class="save btn btn-success" id = "submit_button">Submit</button>
+        <!--<label for="baseline_choice">Show ROI labels</label>-->
+
+    </form>
+     </div>
+
+    <div class="col-sm-7">
+
+        <br>
+        <br>
+        <br>
+
+        <br>
+
+        <h5>Suggestions for first condition</h5>
+
+        <div class="btn-group" id = 'first_cond'>
+           <button class="save btn btn-inverse" id = "bnt_1a">
+              <h6>numbers </h6> "one two three four five <br>six seven eight nine ten eleven ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_2a">
+              <h6>quantity </h6> "coin coins cent cents penny  <br>pennies nickel nickels dime dimes..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_3a">
+              <h6>time </h6>  "second seconds minute minutes <br>hour hours day days..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_4a">
+              <h6>sightwords </h6> "    colorless white ivory yellow <br>gold orange green olive turquoise..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_5a">
+              <h6>soundwords </h6> "crash squawk crackle chime ring<br>thud whine buzz laugh silence ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_6a">
+              <h6>touchwords </h6> "cool wet silky sandy cold slippery  <br> velvety gritty icy spongy smooth..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_7a">
+              <h6>smellwords </h6> "sweet piney acrid sickly scented  <br>pungent burnt stagnant fragrant ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_8a">
+              <h6>tastewords </h6> "oily rich bland ripe buttery <br> heartytasteless medicinal salty ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_9a">
+              <h6>actions </h6> "climb run walk jump dance talk  <br>negotiate work type write jog  ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_10a">
+              <h6>placewords </h6> "house building hotel office   <br> lot park street road sidewalk..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_11a">
+              <h6>tools </h6> "hammer chisel nail saw drill   <br>scythe screw driver nail ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_12a">
+              <h6>animals </h6> "sheep cow horse bird crow dog  <br>cat spider ant bug butterfly   ..."
+           </button>
+
+        </div>
+
+        <br>
+
+        <h5>Suggestions for second condition</h5>
+
+        <div class="btn-group" id = 'second_cond'>
+           <button class="save btn btn-inverse" id = "bnt_1">
+              <h6>numbers </h6> "one two three four five <br>six seven eight nine ten eleven ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_2">
+              <h6>quantity </h6> "coin coins cent cents penny  <br>pennies nickel nickels dime dimes..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_3">
+              <h6>time </h6>  "second seconds minute minutes <br>hour hours day days..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_4">
+              <h6>sightwords </h6> "    colorless white ivory yellow <br>gold orange green olive turquoise..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_5">
+              <h6>soundwords </h6> "crash squawk crackle chime ring<br>thud whine buzz laugh silence ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_6">
+              <h6>touchwords </h6> "cool wet silky sandy cold slippery  <br> velvety gritty icy spongy smooth..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_7">
+              <h6>smellwords </h6> "sweet piney acrid sickly scented  <br>pungent burnt stagnant fragrant ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_8">
+              <h6>tastewords </h6> "oily rich bland ripe buttery <br> heartytasteless medicinal salty ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_9">
+              <h6>actions </h6> "climb run walk jump dance talk  <br>negotiate work type write jog  ..."
+           </button>
+            <button class="save btn btn-inverse" id = "bnt_10">
+              <h6>placewords </h6> "house building hotel office   <br> lot park street road sidewalk..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_11">
+              <h6>tools </h6> "hammer chisel nail saw drill   <br>scythe screw driver nail ..."
+           </button>
+             <button class="save btn btn-inverse" id = "bnt_12">
+              <h6>animals </h6> "sheep cow horse bird crow dog  <br>cat spider ant bug butterfly   ..."
+           </button>
+
+        </div>
+
+        </div>
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#id_baseline_choice").click(function(){
+    if(this.checked) {
+        document.getElementById("id_list2_name").readOnly = true;
+        document.getElementById("id_list2_text").readOnly = true;
+        document.getElementById("id_list2_name").value = "baseline";
+        document.getElementById("id_list2_text").value = "########";
+        document.getElementById("id_list2_name").style = "background-color:#BBB";
+        document.getElementById("id_list2_text").style = "background-color:#BBB";
+    } else {
+        document.getElementById("id_list2_name").readOnly = false;
+        document.getElementById("id_list2_text").readOnly = false;
+        document.getElementById("id_list2_name").value = "";
+        document.getElementById("id_list2_text").value = "";
+        document.getElementById("id_list2_name").style = "background-color:#FFFFFF";
+        document.getElementById("id_list2_text").style = "background-color:#FFFFFF";
+    }
+    });
+$("#bnt_1a").click(function(){
+    document.getElementById("id_list1_name").value = "number";
+    document.getElementById("id_list1_text").value = "one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, twenty, thirty, forty, fifty, hundred, thousand, million, half, quarter, pair, few, several, many, some, less, more";
+});
+$("#bnt_1").click(function(){
+    document.getElementById("id_list2_name").value = "number";
+    document.getElementById("id_list2_text").value = "one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, twenty, thirty, forty, fifty, hundred, thousand, million, half, quarter, pair, few, several, many, some, less, more";
+});
+$("#bnt_2a").click(function(){
+    document.getElementById("id_list1_name").value = "quantity";
+    document.getElementById("id_list1_text").value = "coin, coins, cent, cents, penny, pennies, nickel, nickels, dime, dimes, quarter, quarters, dollar, dollars, ounce, ounces, pound, pounds, millimeter, millimeters, centimeter, centimeters, meter, meters, inch, inches, foot, feet, yard, yards, mile, miles, kilometer, kilometers, gram, grams, kilogram, kilograms";
+});
+$("#bnt_2").click(function(){
+    document.getElementById("id_list2_name").value = "quantity";
+    document.getElementById("id_list2_text").value = "coin, coins, cent, cents, penny, pennies, nickel, nickels, dime, dimes, quarter, quarters, dollar, dollars, ounce, ounces, pound, pounds, millimeter, millimeters, centimeter, centimeters, meter, meters, inch, inches, foot, feet, yard, yards, mile, miles, kilometer, kilometers, gram, grams, kilogram, kilograms";
+});
+$("#bnt_3a").click(function(){
+    document.getElementById("id_list1_name").value = "time";
+    document.getElementById("id_list1_text").value = "second, seconds, minute, minutes, hour, hours, day, days, week, weeks, month, months, year, years, decade, decades, century, centuries, later, sooner, before, after, soon, tomorrow, tonight, next, first, last, afternoon, afternoons, morning, mornings, night, nights, today, yesterday";
+});
+$("#bnt_3").click(function(){
+    document.getElementById("id_list2_name").value = "time";
+    document.getElementById("id_list2_text").value = "second, seconds, minute, minutes, hour, hours, day, days, week, weeks, month, months, year, years, decade, decades, century, centuries, later, sooner, before, after, soon, tomorrow, tonight, next, first, last, afternoon, afternoons, morning, mornings, night, nights, today, yesterday";
+});
+$("#bnt_4a").click(function(){
+    document.getElementById("id_list1_name").value = "sight words";
+    document.getElementById("id_list1_text").value = "colorless, white, ivory, yellow, gold, orange, green, olive, turquoise, azure, pink, crimson, maroon, lavender, purple, silver, brown, black, mottled, red, ruby, blue, spotted, round, oval, triangular, rectangular, square, shapeless, immense, massive, large, tiny, small, tall, short, wide, long, narrow, lean, round, flat, curved, wavy, ruffled, angular, hollow, tapered, wiry, lopsided, freckled, wrinkled, striped, bright, clear, glossy, jeweled, fiery, shimmering, muddy, drab, dark, grimy, worn, cluttered, fresh, flowery, transparent, sheer, opaque, muscular, handsome, robust, fragile, pale, perky, lacy, shadowy";
+});
+$("#bnt_4").click(function(){
+    document.getElementById("id_list2_name").value = "sight words";
+    document.getElementById("id_list2_text").value = "colorless, white, ivory, yellow, gold, orange, green, olive, turquoise, azure, pink, crimson, maroon, lavender, purple, silver, brown, black, mottled, red, ruby, blue, spotted, round, oval, triangular, rectangular, square, shapeless, immense, massive, large, tiny, small, tall, short, wide, long, narrow, lean, round, flat, curved, wavy, ruffled, angular, hollow, tapered, wiry, lopsided, freckled, wrinkled, striped, bright, clear, glossy, jeweled, fiery, shimmering, muddy, drab, dark, grimy, worn, cluttered, fresh, flowery, transparent, sheer, opaque, muscular, handsome, robust, fragile, pale, perky, lacy, shadowy";
+});
+$("#bnt_5a").click(function(){
+    document.getElementById("id_list1_name").value = "sound words";
+    document.getElementById("id_list1_text").value = "crash, squawk, crackle, chime, ring, thud, whine, buzz, laugh, silence, bump, bark, clink, gurgle, chuckle, boom, bleat, hiss, giggle, cry, thunder, bray, snort, guffaw, bawled, bang, blare, bellow, sing, crow, roar, rumble, growl, hum, chatter, scream, grate, whimper, mutter, mumble, screech, slam, stammer, murmur, wail, shout, clap, snap, whisper, babble, yell, stomp, rustle, sigh, cheer, whistle, jangle, whir, hush, storm, chirp";
+});
+$("#bnt_5").click(function(){
+    document.getElementById("id_list2_name").value = "sounds words";
+    document.getElementById("id_list2_text").value = "crash, squawk, crackle, chime, ring, thud, whine, buzz, laugh, silence, bump, bark, clink, gurgle, chuckle, boom, bleat, hiss, giggle, cry, thunder, bray, snort, guffaw, bawled, bang, blare, bellow, sing, crow, roar, rumble, growl, hum, chatter, scream, grate, whimper, mutter, mumble, screech, slam, stammer, murmur, wail, shout, clap, snap, whisper, babble, yell, stomp, rustle, sigh, cheer, whistle, jangle, whir, hush, storm, chirp";
+});
+$("#bnt_6a").click(function(){
+    document.getElementById("id_list1_name").value = "touch words";
+    document.getElementById("id_list1_text").value = "cool, wet, silky, sandy, cold, slippery, velvety, gritty, icy, spongy, smooth, rough, lukewarm, mushy, soft, sharp, tepid, oily, woolly, thick, warm, waxy, furry, dry, hot, fleshy, feathery, dull, steamy, rubbery, fuzzy, thin, sticky, bumpy, hairy, fragile, damp, crisp, leathery, tender";
+});
+$("#bnt_6").click(function(){
+    document.getElementById("id_list2_name").value = "touch words";
+    document.getElementById("id_list2_text").value = "cool, wet, silky, sandy, cold, slippery, velvety, gritty, icy, spongy, smooth, rough, lukewarm, mushy, soft, sharp, tepid, oily, woolly, thick, warm, waxy, furry, dry, hot, fleshy, feathery, dull, steamy, rubbery, fuzzy, thin, sticky, bumpy, hairy, fragile, damp, crisp, leathery, tender";
+});
+$("#bnt_7a").click(function(){
+    document.getElementById("id_list1_name").value = "smell words";
+    document.getElementById("id_list1_text").value = "sweet, piney, acrid, sickly, scented, pungent, burnt, stagnant, fragrant, spicy, gaseous, musty, aromatic, gamy, putrid, moldy, perfumed, fishy, spoiled, dry, fresh, briny, sour, damp, earthy, sharp, rancid, dank";
+});
+$("#bnt_7").click(function(){
+    document.getElementById("id_list2_name").value = "smell words";
+    document.getElementById("id_list2_text").value = "sweet, piney, acrid, sickly, scented, pungent, burnt, stagnant, fragrant, spicy, gaseous, musty, aromatic, gamy, putrid, moldy, perfumed, fishy, spoiled, dry, fresh, briny, sour, damp, earthy, sharp, rancid, dank";
+});
+$("#bnt_8a").click(function(){
+    document.getElementById("id_list1_name").value = "taste words";
+    document.getElementById("id_list1_text").value = "oily, rich, bland, ripe, buttery, hearty, tasteless, medicinal, salty, mellow, sour, fishy, bitter, sugary, vinegary, spicy, bittersweet, crisp, fruity, hot, sweet, savory, tangy, burnt";
+});
+$("#bnt_8").click(function(){
+    document.getElementById("id_list2_name").value = "taste words";
+    document.getElementById("id_list2_text").value = "oily, rich, bland, ripe, buttery, hearty, tasteless, medicinal, salty, mellow, sour, fishy, bitter, sugary, vinegary, spicy, bittersweet, crisp, fruity, hot, sweet, savory, tangy, burnt";
+});
+$("#bnt_9a").click(function(){
+    document.getElementById("id_list1_name").value = "actions";
+    document.getElementById("id_list1_text").value = "climb, run, walk, jump, dance, talk, negotiate, work, type, write, jog, drive, sing, bike, build, manage, assemble";
+});
+$("#bnt_9").click(function(){
+    document.getElementById("id_list2_name").value = "actions";
+    document.getElementById("id_list2_text").value = "climb, run, walk, jump, dance, talk, negotiate, work, type, write, jog, drive, sing, bike, build, manage, assemble";
+});
+$("#bnt_10a").click(function(){
+    document.getElementById("id_list1_name").value = "place words";
+    document.getElementById("id_list1_text").value = "house, building, hotel, office, parking, lot, park, street, road, sidewalk, highway, path, field, mountain, forest, beach, cinema, restaurant, bistro, shop, store";
+});
+$("#bnt_10").click(function(){
+    document.getElementById("id_list2_name").value = "place words";
+    document.getElementById("id_list2_text").value = "house, building, hotel, office, parking, lot, park, street, road, sidewalk, highway, path, field, mountain, forest, beach, cinema, restaurant, bistro, shop, store";
+});
+$("#bnt_11a").click(function(){
+    document.getElementById("id_list1_name").value = "tools";
+    document.getElementById("id_list1_text").value = "hammer, chisel, nail, saw, drill, scythe, screw, driver, nail, paintbrush, pliers, tongs, pincers, nippers";
+});
+$("#bnt_11").click(function(){
+    document.getElementById("id_list2_name").value = "tools";
+    document.getElementById("id_list2_text").value = "hammer, chisel, nail, saw, drill, scythe, screw, driver, nail, paintbrush, pliers, tongs, pincers, nippers";
+});
+$("#bnt_12a").click(function(){
+    document.getElementById("id_list1_name").value = "animals";
+    document.getElementById("id_list1_text").value = "sheep, cow, horse, bird, crow, dog, cat, spider, ant, bug, butterfly, chicken, turkey, lizard, slug, snail, goat, pig, donkey, bunny, rabbit, fly, lamb, kitten, puppy, monkey, ape, chimpanzee, gorilla, fish, salmon, bear, panda, doe, buck, fox, raccoon, skunk, squirrel, roach";
+});
+$("#bnt_12").click(function(){
+    document.getElementById("id_list2_name").value = "animals";
+    document.getElementById("id_list2_text").value = "sheep, cow, horse, bird, crow, dog, cat, spider, ant, bug, butterfly, chicken, turkey, lizard, slug, snail, goat, pig, donkey, bunny, rabbit, fly, lamb, kitten, puppy, monkey, ape, chimpanzee, gorilla, fish, salmon, bear, panda, doe, buck, fox, raccoon, skunk, squirrel, roach";
+});
+$("#submit_button").click(function(){
+    document.getElementById('blackout').style.display = 'block';
+});
+});
+</script>
+
+{% endblock %}
