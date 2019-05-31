@@ -1,5 +1,6 @@
 #!/bin/bash
-rm -rf ~/Library/Application Support/pycortex/
+rm -rf ~/Library/Application\ Support/pycortex/
+pip install virtualenv
 virtualenv -p /usr/bin/python2.7 venv
 source venv/bin/activate
 pip install django
@@ -14,6 +15,8 @@ pip install nipy==0.4.2
 pip install h5py==2.9.0
 pip install Pillow==6.0.0
 pip install seaborn==0.9.0
+pip install tornado==4.3
+pip install lxml==4.3.3
 pip install cortex/
 python fslinstaller.py
 deactivate
