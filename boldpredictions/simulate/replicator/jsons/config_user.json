@@ -1,4 +1,4 @@
 {
     "build_dir":"../template",
-    "model_dir":{ "english1000":"../modeldata/"}
+    "model_dir":{ "english1000":"../protodata/"}
 }

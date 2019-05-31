@@ -1,0 +1,3 @@
+[submodule "protodata"]
+	path = protodata
+	url = git@github.com:boldprediction/protodata.git

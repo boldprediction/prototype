@@ -15,4 +15,5 @@ pip install h5py==2.9.0
 pip install Pillow==6.0.0
 pip install seaborn==0.9.0
 pip install cortex/
+python fslinstaller.py
 deactivate
