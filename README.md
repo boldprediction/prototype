@@ -1,5 +1,5 @@
 # Introduction
-This is a project of the old prototype of boldpredictions' website. Actually, this project aims to provide a quick and clean setup for developers so they can set up their development environment easily. Note. we only support MacOS currently.
+This is a project of the old prototype of boldpredictions' website. Actually, this project aims to provide a quick and clean setup for developers so they can set up their local development environment easily. Note. we only support MacOS currently.
 
 # Dependencies
 Most of python library dependencies will be automatically installed. But before that, you have to make sure you have installed the following items:
