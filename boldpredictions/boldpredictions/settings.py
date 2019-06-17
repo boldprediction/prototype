@@ -118,7 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-BASE_DIR = '/home/ubuntu/vivi_experiment/boldpredictions_ubuntu/boldpredictions/' 
+BASE_DIR = '~/Work/CMU/StudioProject/prototype/boldpredictions/boldpredictions' 
 #STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")]

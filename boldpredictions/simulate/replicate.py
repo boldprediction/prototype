@@ -139,7 +139,7 @@ class Replicate(Task):
         build_dir = config["build_dir"]
         model_dir = config["model_dir"]
         self.model_holder = ModelHolder(self.json_dir)
-        tmp_image_dir = './static/simulate/'
+        tmp_image_dir = './simulate/static/simulate/'
 
         style = 'resources/css/style.css'
 

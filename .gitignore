@@ -3,6 +3,6 @@
 .vscode/
 *.pyc
 venv/
-boldpredictions/static/
+boldpredictions/simulate/static/
 **/cache/
 template/
