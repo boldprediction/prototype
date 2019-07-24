@@ -48,7 +48,7 @@ class Mean(Repbase):
         for vis in self.visualizers:
             if isinstance(vis, SubjectAnalysis):
                 # It's a subject analysis, just give it the mean
-                outputs.append(vis(mean_volume))
+                outputs.append(vis(mean_volume, contrast))
 
             elif isinstance(vis, GroupAnalysis):
                 # It's a group analysis, give it mean and individual volumes & contrast

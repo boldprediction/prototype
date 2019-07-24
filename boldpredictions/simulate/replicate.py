@@ -13,6 +13,8 @@ import numpy as np
 import h5py
 from .celery import Task
 
+import hashlib
+
 import nibabel as ni
 import os
 from replicator.utils import FSLDIR, mni2vox
@@ -54,6 +56,21 @@ class WebGL(SubjectAnalysis):
         # if contrast_data.experiment.extra_info['do_perm']:
         # res_dict['test']= contrast_data.permuted_contrast_pval
 
+        e = contrast_data.contrast.experiment
+        sn = contrast_data.ref_to_subject.name
+        cn1, cn2 = contrast_data.contrast.condition_names
+        w1 = [w.encode('ascii') for cn in cn1 for w in e.conditions[cn].words_in_model]
+        w2 = [w.encode('ascii') for cn in cn2 for w in e.conditions[cn].words_in_model]
+        s1 = ''.join(w1)
+        s2 = ''.join(w2)
+        b1 = s1.encode("utf-8")
+        b2 = s2.encode("utf-8")
+        sha1, sha2 = hashlib.sha256(b1).hexdigest()[:7], hashlib.sha256(b2).hexdigest()[:7]
+
+        vmin, vmax = contrast_data.vmin, contrast_data.vmax
+        fn = "/Users/zl/Desktop/data/webgl@{n}@{a}@{b}@{min}@{max}.npy".format(n=sn, a=sha1, b=sha2, min=vmin, max=vmax)
+        np.save(fn, contrast_data.data)
+
         jsonstr = cortex.webgl.make_static_light(self.tmp_image_dir,res_dict)
         
 
@@ -71,7 +88,7 @@ class WebGLGroup(SubjectAnalysis):
         self.tmp_image_dir = tmp_image_dir
         #self.subjects = subjects
 
-    def __call__(self, contrast):#mean_contrast, subjects_result, contrast):
+    def __call__(self, contrast, rc):#mean_contrast, subjects_result, contrast):
         # Save static viewer
         # port = contrast_data.contrast.experiment.extra_info['port']
         # a = cortex.webgl.view(contrast_data,open_browser = self.open_browser, port = port);
@@ -96,6 +113,20 @@ class WebGLGroup(SubjectAnalysis):
 
         #if contrast_data.experiment.extra_info['do_perm']:
         # res_dict['test'] = self.mean_analysis_p.get_group_mean(subjects_result, self.subjects, contrast)[0]
+
+        e = rc.experiment
+        cn1, cn2 = rc.condition_names
+        w1 = [w.encode('ascii') for cn in cn1 for w in e.conditions[cn].words_in_model]
+        w2 = [w.encode('ascii') for cn in cn2 for w in e.conditions[cn].words_in_model]
+        s1 = ''.join(w1)
+        s2 = ''.join(w2)
+        b1 = s1.encode("utf-8")
+        b2 = s2.encode("utf-8")
+        sha1, sha2 = hashlib.sha256(b1).hexdigest()[:7], hashlib.sha256(b2).hexdigest()[:7]
+
+        vmin, vmax = contrast.vmin, contrast.vmax
+        fn = "/Users/zl/Desktop/data/webglgroup@{a}@{b}@{min}@{max}.npy".format(a=sha1, b=sha2, min=vmin, max=vmax)
+        np.save(fn, contrast.data)
 
         jsonstr = cortex.webgl.make_static_light(self.tmp_image_dir,res_dict)
 
@@ -224,6 +255,9 @@ class Replicate(Task):
 
 
     def compute(self, info):
+
+        print(json.dumps(info))
+
         experiment = Experiment(model_holder = self.model_holder, name = 'temp', image_dir = '.',
                                 model_type = 'english1000', json_dir = self.json_dir, **info)
         
